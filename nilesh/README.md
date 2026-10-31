@@ -14,7 +14,8 @@ Compute path: laptop CPU (clips_480p, every 2nd frame). Gemini API used for mean
         objects.py    step 3  objects near the hands (YOLO-World on hand crops)
         naming.py     step 4a Gemini names each grip from small hand crops
         states.py     step 4  approach / grab / hold / release / touching_fixed  -> contacts.csv
-        render.py     step 5  draws the video
+        stability.py  NEW     Hand Stability Meter (micro-movement / jitter)
+        render.py     step 5  draws the video (+ stability colour bars)
         label.py              accuracy check on frames you judge
         timeline.py           PS3 task-step timeline (Gemini)
       outputs/<clip>/       DATA ONLY (json / jsonl / csv)
@@ -23,6 +24,7 @@ Compute path: laptop CPU (clips_480p, every 2nd frame). Gemini API used for mean
         3_hands_objects.jsonl  3_detections_*.json
         4_hold_names_gemini.json  5_hands_final.jsonl
         contacts.csv          <- the final state timeline
+        stability.csv  stability_stats.json   <- Hand Stability Meter
         actions.csv  6_actions_gemini.json   (PS3)     labels.csv  (your accuracy check)
       output_v/<clip>/      VIDEOS ONLY
         overlay.mp4
@@ -32,6 +34,20 @@ Compute path: laptop CPU (clips_480p, every 2nd frame). Gemini API used for mean
     python run.py all egohack-data/clips_480p/<clip>.mp4
     python run.py timeline egohack-data/clips_480p/<clip>.mp4
     python run.py label egohack-data/clips_480p/<clip>.mp4
+
+    # Hand Stability Meter only (after track or contacts already ran)
+    python run.py stability egohack-data/clips_480p/<clip>.mp4
+    python run.py render    egohack-data/clips_480p/<clip>.mp4   # re-draw with green/yellow/red bars
+
+## Hand Stability Meter
+Measures unwanted micro-movement / shaking during precision work.
+- STABLE   (green)  – low residual jitter after removing intentional motion
+- MODERATE (yellow)
+- UNSTABLE (red)    – high micro-movement
+- MOVING   (cyan)   – large intentional motion; stability not scored
+
+Outputs: stability.csv + stability_stats.json + stability field written into 5_hands_final.jsonl
+so the renderer shows a coloured bar + score next to each hand.
 
 ## Rules
 No footage, frames, screenshots or videos in the repo (see .gitignore). Demo videos go only to the organisers' Drive folder.

@@ -10,6 +10,52 @@ CONN = [(0,1),(1,2),(2,3),(3,4),(0,5),(5,6),(6,7),(7,8),(5,9),(9,10),(10,11),(11
 COL = {"left": (0, 200, 0), "right": (0, 120, 255)}
 STATE_COL = {"grab": (0, 255, 255), "hold": (0, 255, 255), "release": (0, 200, 255),
              "approach": (255, 200, 0), "touching_fixed": (200, 200, 200)}
+# Hand Stability Meter colours (BGR)
+STAB_COL = {
+    "STABLE":   (0, 220, 0),      # green  – low micro-movement
+    "MODERATE": (0, 220, 255),    # yellow
+    "UNSTABLE": (0, 0, 255),      # red    – high jitter
+    "MOVING":   (255, 200, 0),    # cyan   – intentional gross motion
+}
+
+
+def _draw_stability_meter(img, hd, kp):
+    """
+    Draw a compact stability bar + label next to the wrist.
+    Green = stable, yellow = moderate, red = unstable.
+    """
+    stab = hd.get("stability")
+    if not stab:
+        return
+    status = stab.get("status", "")
+    score = stab.get("score")
+    colour = STAB_COL.get(status, (180, 180, 180))
+
+    # Anchor just above the wrist landmark
+    wx, wy = kp[0]
+    bar_w, bar_h = 70, 10
+    x0 = max(4, wx - bar_w // 2)
+    y0 = max(4, wy - 38)
+
+    # Background
+    cv2.rectangle(img, (x0 - 2, y0 - 2), (x0 + bar_w + 2, y0 + bar_h + 16), (0, 0, 0), -1)
+    # Empty bar
+    cv2.rectangle(img, (x0, y0), (x0 + bar_w, y0 + bar_h), (40, 40, 40), -1)
+    # Filled portion (score 0-100 → width)
+    if score is not None:
+        fill = int(bar_w * max(0, min(100, score)) / 100)
+        cv2.rectangle(img, (x0, y0), (x0 + fill, y0 + bar_h), colour, -1)
+    else:
+        # MOVING – full cyan bar
+        cv2.rectangle(img, (x0, y0), (x0 + bar_w, y0 + bar_h), colour, -1)
+
+    # Text: "ST 92" or "MOVING"
+    if score is not None:
+        txt = f"{status[:3]} {score}"
+    else:
+        txt = status
+    cv2.putText(img, txt, (x0, y0 + bar_h + 13),
+                cv2.FONT_HERSHEY_SIMPLEX, 0.45, colour, 1, cv2.LINE_AA)
 
 
 def draw(img, last, i):
@@ -29,10 +75,20 @@ def draw(img, last, i):
         c = COL[hd["side"]]
         if hd.get("interp") or hd.get("rescued") == "roi":
             c = tuple(int(v * 0.6) for v in c)         # dimmer = estimated from context, not directly detected
+
+        # When stability is present, tint the skeleton by stability colour
+        stab = hd.get("stability")
+        if stab and stab.get("status") in STAB_COL:
+            c = STAB_COL[stab["status"]]
+
         for a, b in CONN:
             cv2.line(img, kp[a], kp[b], c, 4 if hot else 2)
         for p in kp:
             cv2.circle(img, p, 3, (0, 255, 255) if hot else (255, 255, 255), -1)
+
+        # Stability meter (bar + score)
+        _draw_stability_meter(img, hd, kp)
+
         label = hd["side"].upper()
         if st:
             label += f" {st.replace('_', ' ').upper()} {hd.get('object') or ''}"

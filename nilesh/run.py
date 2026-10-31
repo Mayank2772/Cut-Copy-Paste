@@ -5,8 +5,9 @@ track     step 1  find hands (MediaPipe + recovery + smoothing)     outputs/<cli
 grip      step 2  fix left/right, fill gaps, count bent fingers     outputs/<clip>/2_hands_grip.jsonl
 objects   step 3  find objects near the hands                       outputs/<clip>/3_hands_objects.jsonl
 contacts  step 4  states: approach / grab / hold / release          outputs/<clip>/contacts.csv  (+ Gemini names)
+stability step    Hand Stability Meter (micro-movement / jitter)    outputs/<clip>/stability.csv
 render    step 5  draw everything on the video                      output_v/<clip>/overlay.mp4
-all       track -> grip -> objects -> contacts -> render
+all       track -> grip -> objects -> contacts -> stability -> render
 timeline  PS3: Gemini task-step timeline                            outputs/<clip>/actions.csv
 label     measure accuracy on ~100 frames you judge by hand         outputs/<clip>/labels.csv
 
@@ -17,7 +18,10 @@ from pathlib import Path
 from src.common import dirs, F
 
 ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-ap.add_argument("step", choices=["track", "grip", "objects", "contacts", "render", "all", "timeline", "label"])
+ap.add_argument("step", choices=[
+    "track", "grip", "objects", "contacts", "stability", "render",
+    "all", "timeline", "label",
+])
 ap.add_argument("clip")
 ap.add_argument("--every", type=int, default=2)
 ap.add_argument("--no-gemini", action="store_true")
@@ -29,7 +33,11 @@ if not Path(a.clip).exists():
 if a.no_gemini:
     os.environ["NO_GEMINI"] = "1"
 out, vid = dirs(a.clip)
-todo = ["track", "grip", "objects", "contacts", "render"] if a.step == "all" else [a.step]
+todo = (
+    ["track", "grip", "objects", "contacts", "stability", "render"]
+    if a.step == "all"
+    else [a.step]
+)
 
 for step in todo:
     print(f"\n=== {step} ===", flush=True)
@@ -45,6 +53,9 @@ for step in todo:
     elif step == "contacts":
         from src.states import run
         run(Path(a.clip), out)
+    elif step == "stability":
+        from src.stability import run_stability
+        print(json.dumps(run_stability(out), indent=2))
     elif step == "render":
         from src.render import render
         print("saved", render(a.clip, out, vid))

@@ -21,6 +21,8 @@ F = {
     "names": "4_hold_names_gemini.json",   # step 4  contacts  : Gemini answers per grip (cache)
     "final": "5_hands_final.jsonl",        # step 4  contacts  : + state (approach/grab/hold/release) per frame
     "contacts": "contacts.csv",            # step 4  contacts  : FINAL timeline of states
+    "stability": "stability.csv",          # step stability : micro-movement / jitter scores
+    "stability_stats": "stability_stats.json",
     "actions_raw": "6_actions_gemini.json",  # PS3 timeline (Gemini answer, cached)
     "actions": "actions.csv",                # PS3 timeline
     "labels": "labels.csv",                  # your hand-labelled accuracy check
