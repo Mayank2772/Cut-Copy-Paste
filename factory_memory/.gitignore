@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+egohack-data/
+*.mp4
+*.avi
+*.task
+*.pt
+*.pth
+output_v/
+.DS_Store
+.env

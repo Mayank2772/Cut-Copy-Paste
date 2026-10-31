@@ -1,0 +1,8 @@
+mediapipe
+opencv-python
+numpy
+pandas
+tqdm
+google-genai
+ultralytics
+streamlit

@@ -1,6 +1,0 @@
-mediapipe
-opencv-python
-numpy
-pandas
-tqdm
-ultralytics
