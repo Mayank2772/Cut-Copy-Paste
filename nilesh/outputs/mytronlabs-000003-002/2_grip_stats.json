@@ -1,0 +1,14 @@
+{
+  "sides_flipped": false,
+  "left_of_right_agreement": 0.8251231527093597,
+  "hands_found_share_raw": 0.952,
+  "hands_found_share_after_gap_fill": 0.966,
+  "interpolated_hand_frames": 406,
+  "rejected_false_rescues": 13,
+  "finger_ratio_p10_p50_p90": [
+    0.95,
+    1.2,
+    1.43
+  ],
+  "share_of_hand_frames_in_grip_pose": 0.89
+}

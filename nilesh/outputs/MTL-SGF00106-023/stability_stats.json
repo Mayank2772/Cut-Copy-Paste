@@ -1,0 +1,17 @@
+{
+  "clip": "MTL-SGF00106-023",
+  "window_seconds": 1.0,
+  "source": "5_hands_final.jsonl",
+  "left": {
+    "valid_windows": 0,
+    "average_stability": null,
+    "minimum_stability": null,
+    "unstable_windows": 0
+  },
+  "right": {
+    "valid_windows": 6,
+    "average_stability": 0.0,
+    "minimum_stability": 0,
+    "unstable_windows": 6
+  }
+}
