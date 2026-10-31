@@ -11,7 +11,7 @@ Compute path: laptop CPU (clips_480p, every 2nd frame). Gemini API used for mean
         common.py           paths + file names (the only place they are defined)
         tracking.py   step 1  hands: MediaPipe, recovery near last position, smoothing
         grip.py       step 2  left/right fix, gap fill, bent-finger count
-        objects.py    step 3  all visible objects + enlarged hand crops, stable boxes
+        objects.py    step 3  objects near the hands (YOLO-World on hand crops)
         naming.py     step 4a Gemini names each grip from small hand crops
         states.py     step 4  approach / grab / hold / release / touching_fixed  -> contacts.csv
         stability.py  NEW     Hand Stability Meter (micro-movement / jitter)
@@ -30,25 +30,14 @@ Compute path: laptop CPU (clips_480p, every 2nd frame). Gemini API used for mean
         overlay.mp4
 
 ## Run
-    # Optional: without Gemini, detector names are still used
-    $env:GEMINI_API_KEY="..."           # never commit keys
-    python run.py all egohack-data/clips_480p/<clip>.mp4 --no-gemini
+    export GEMINI_API_KEY="..."        # never commit keys
+    python run.py all egohack-data/clips_480p/<clip>.mp4
     python run.py timeline egohack-data/clips_480p/<clip>.mp4
     python run.py label egohack-data/clips_480p/<clip>.mp4
 
     # Hand Stability Meter only (after track or contacts already ran)
     python run.py stability egohack-data/clips_480p/<clip>.mp4
     python run.py render    egohack-data/clips_480p/<clip>.mp4   # re-draw with green/yellow/red bars
-
-The `all` run detects objects independently of grabbing, associates the
-nearest object with each hand, estimates grab/hold/release from finger bends
-and temporal evidence, and writes every visible object box to the annotated
-video. The default general detector is `yolo11s.pt`. For factory-specific
-items, use YOLO-World with a focused vocabulary:
-
-    $env:OBJ_MODEL="yolov8s-worldv2.pt"
-    $env:OBJ_CLASSES="bearing,red handle,metal bracket,wooden block,drill"
-    python run.py all egohack-data/clips_480p/<clip>.mp4 --no-gemini
 
 ## Hand Stability Meter
 Measures unwanted micro-movement / shaking during precision work.
