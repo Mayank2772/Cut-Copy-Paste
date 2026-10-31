@@ -12,3 +12,4 @@ frames/
 *.task
 .env
 __pycache__/
+*.pt

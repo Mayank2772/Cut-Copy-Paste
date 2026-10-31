@@ -1,8 +1,10 @@
-"""PS3 core: Gemini video -> JSON action timeline. Responses are cached on disk."""
+"""PS3 timeline: Gemini video -> JSON action timeline. Cached in outputs/<clip>/6_actions_gemini.json;
+run.py writes actions.csv next to it."""
 import json, os, time
 from pathlib import Path
 from google import genai
 from google.genai import types
+from src.common import F
 
 VERBS = ["pick", "place", "hold", "insert", "fasten", "tighten", "press", "pull",
          "inspect", "wipe", "carry", "align", "cut", "open", "close"]
@@ -19,7 +21,7 @@ def get_timeline(clip, out_dir, fps=4, model=None):
     """fps: frames/sec Gemini samples (default is only ~1, too low for fast hand moves)."""
     clip, out_dir = Path(clip), Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
-    cache = out_dir / "actions_raw.json"
+    cache = out_dir / F["actions_raw"]
     if cache.exists():
         return json.load(open(cache))
     model = model or os.environ.get("GEMINI_MODEL", "gemini-3.8-flash")  # check docs for current name

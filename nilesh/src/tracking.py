@@ -1,12 +1,13 @@
-"""PS1 layer: MediaPipe hand tracking + context-aware recovery + One-Euro smoothing + stats.
-Output: outputs/<clip>/hands.jsonl and hands_stats.json (detection share, FPS)."""
+"""STEP 1 - track: MediaPipe hands + context-aware recovery + One-Euro smoothing.
+Out: outputs/<clip>/1_hands.jsonl, 1_hands_stats.json (detection share, FPS)."""
 import json, math, os, time
 from pathlib import Path
 import cv2, mediapipe as mp
 from mediapipe.tasks import python as mpp
 from mediapipe.tasks.python import vision
+from src.common import ROOT, F
 
-MODEL = "hand_landmarker.task"
+MODEL = str(ROOT / "hand_landmarker.task")
 MAX_GAP_S = 0.5      # reset smoothing if a hand was missing longer than this
 ROI_MAX_GAP = float(os.environ.get("ROI_MAX_GAP", 0.8))  # seconds a lost hand is searched for near its predicted spot
 
@@ -146,7 +147,7 @@ def run_hands(clip, out_dir, step=2, swap_sides=False, preprocess=None):
 
     with vision.HandLandmarker.create_from_options(opts) as lm, \
          vision.HandLandmarker.create_from_options(opts_img) as lm2, \
-         open(out_dir / "hands.jsonl", "w") as out:
+         open(out_dir / F["hands"], "w") as out:
         for i, t, img in frames(clip, step):
             if preprocess:
                 img = preprocess(img)
@@ -194,5 +195,5 @@ def run_hands(clip, out_dir, step=2, swap_sides=False, preprocess=None):
              "detection_share_without_recovery": n_raw / max(n_frames, 1),
              "processing_fps": n_frames / max(secs, 1e-6), "step": step,
              "rescued_by_retry": n_full, "recovered_near_last_position": n_roi}
-    json.dump(stats, open(out_dir / "hands_stats.json", "w"), indent=2)
+    json.dump(stats, open(out_dir / F["hands_stats"], "w"), indent=2)
     return stats
