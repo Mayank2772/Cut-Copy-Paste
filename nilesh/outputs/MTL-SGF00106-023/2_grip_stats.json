@@ -1,14 +1,14 @@
 {
   "sides_flipped": false,
-  "left_of_right_agreement": 0.973718791064389,
-  "hands_found_share_raw": 0.662,
-  "hands_found_share_after_gap_fill": 0.701,
-  "interpolated_hand_frames": 387,
-  "rejected_false_rescues": 17,
+  "left_of_right_agreement": 0.9867021276595744,
+  "hands_found_share_raw": 0.651,
+  "hands_found_share_after_gap_fill": 0.69,
+  "interpolated_hand_frames": 355,
+  "rejected_false_rescues": 26,
   "finger_ratio_p10_p50_p90": [
-    1.12,
+    1.11,
     1.39,
     1.68
   ],
-  "share_of_hand_frames_in_grip_pose": 0.449
+  "share_of_hand_frames_in_grip_pose": 0.413
 }

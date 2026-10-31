@@ -5,3 +5,4 @@ pandas
 tqdm
 google-genai
 streamlit
+ultralytics

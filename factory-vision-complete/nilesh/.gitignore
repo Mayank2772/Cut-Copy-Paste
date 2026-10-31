@@ -1,0 +1,15 @@
+egohack/
+egohack-data/
+clips/
+clips_480p/
+frames/
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.png
+*.jpg
+*.task
+.env
+__pycache__/
+*.pt
