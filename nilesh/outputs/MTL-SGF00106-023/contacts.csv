@@ -1,0 +1,75 @@
+clip,t_start,t_end,hand,state,object_name
+MTL-SGF00106-023.mp4,0.87,1.67,right,holding,box
+MTL-SGF00106-023.mp4,1.87,3.73,right,holding,box
+MTL-SGF00106-023.mp4,4.27,7.47,left,holding,box
+MTL-SGF00106-023.mp4,5.2,7.67,right,holding,box
+MTL-SGF00106-023.mp4,10.73,11.33,left,holding,unknown object
+MTL-SGF00106-023.mp4,12.8,16.8,left,holding,unknown object
+MTL-SGF00106-023.mp4,13.0,13.33,right,holding,unknown object
+MTL-SGF00106-023.mp4,14.87,15.13,right,holding,unknown object
+MTL-SGF00106-023.mp4,18.07,20.73,right,holding,unknown object
+MTL-SGF00106-023.mp4,20.33,20.93,left,holding,unknown object
+MTL-SGF00106-023.mp4,23.4,24.2,right,holding,unknown object
+MTL-SGF00106-023.mp4,23.6,24.13,left,holding,paint can
+MTL-SGF00106-023.mp4,24.93,25.67,right,holding,box
+MTL-SGF00106-023.mp4,27.13,27.4,left,holding,paint can
+MTL-SGF00106-023.mp4,28.33,28.8,right,holding,unknown object
+MTL-SGF00106-023.mp4,29.8,34.73,right,holding,box
+MTL-SGF00106-023.mp4,31.6,32.47,left,holding,box
+MTL-SGF00106-023.mp4,32.67,33.6,left,holding,box
+MTL-SGF00106-023.mp4,34.53,34.8,left,holding,unknown object
+MTL-SGF00106-023.mp4,36.0,36.27,left,holding,unknown object
+MTL-SGF00106-023.mp4,36.0,36.67,right,holding,unknown object
+MTL-SGF00106-023.mp4,37.53,37.93,left,touching_fixed,box
+MTL-SGF00106-023.mp4,38.67,39.8,right,holding,box
+MTL-SGF00106-023.mp4,39.53,39.8,left,touching_fixed,box
+MTL-SGF00106-023.mp4,41.67,42.93,right,holding,unknown object
+MTL-SGF00106-023.mp4,44.4,45.0,left,holding,box
+MTL-SGF00106-023.mp4,46.4,51.0,right,holding,red power tool
+MTL-SGF00106-023.mp4,70.13,72.6,left,holding,box
+MTL-SGF00106-023.mp4,70.27,73.27,right,holding,box
+MTL-SGF00106-023.mp4,73.6,74.13,left,holding,box
+MTL-SGF00106-023.mp4,74.53,82.67,right,holding,box
+MTL-SGF00106-023.mp4,75.8,76.27,left,holding,wooden plank
+MTL-SGF00106-023.mp4,76.93,78.33,left,holding,box
+MTL-SGF00106-023.mp4,79.6,80.07,left,holding,box
+MTL-SGF00106-023.mp4,80.53,80.87,left,holding,box
+MTL-SGF00106-023.mp4,85.6,86.47,left,holding,box
+MTL-SGF00106-023.mp4,85.6,85.93,right,touching_fixed,shelf
+MTL-SGF00106-023.mp4,86.0,86.33,right,holding,box
+MTL-SGF00106-023.mp4,86.53,86.87,right,holding,box
+MTL-SGF00106-023.mp4,87.07,88.2,right,holding,box
+MTL-SGF00106-023.mp4,87.2,87.93,left,holding,box
+MTL-SGF00106-023.mp4,89.33,89.67,left,holding,box
+MTL-SGF00106-023.mp4,92.73,93.27,right,holding,box
+MTL-SGF00106-023.mp4,93.07,95.0,left,holding,wooden panel
+MTL-SGF00106-023.mp4,93.6,94.0,right,touching_fixed,shelf
+MTL-SGF00106-023.mp4,94.13,94.73,right,touching_fixed,shelf
+MTL-SGF00106-023.mp4,94.8,96.47,right,holding,box
+MTL-SGF00106-023.mp4,101.2,101.8,right,holding,box
+MTL-SGF00106-023.mp4,101.93,104.47,right,holding,box
+MTL-SGF00106-023.mp4,105.4,106.0,right,holding,unknown object
+MTL-SGF00106-023.mp4,106.93,115.13,right,touching_fixed,box
+MTL-SGF00106-023.mp4,110.8,111.2,left,holding,unknown object
+MTL-SGF00106-023.mp4,115.8,116.6,right,holding,box
+MTL-SGF00106-023.mp4,116.8,117.87,right,holding,box
+MTL-SGF00106-023.mp4,117.87,119.33,left,touching_fixed,shelf
+MTL-SGF00106-023.mp4,118.27,118.6,right,touching_fixed,shelf
+MTL-SGF00106-023.mp4,119.0,119.27,right,holding,box
+MTL-SGF00106-023.mp4,120.87,123.27,right,holding,box
+MTL-SGF00106-023.mp4,122.47,123.13,left,holding,box
+MTL-SGF00106-023.mp4,131.73,133.4,left,holding,unknown object
+MTL-SGF00106-023.mp4,145.4,145.87,right,holding,unknown object
+MTL-SGF00106-023.mp4,145.93,147.33,left,holding,unknown object
+MTL-SGF00106-023.mp4,147.87,148.33,left,holding,unknown object
+MTL-SGF00106-023.mp4,155.87,156.73,left,holding,unknown object
+MTL-SGF00106-023.mp4,157.67,158.0,left,holding,unknown object
+MTL-SGF00106-023.mp4,162.27,163.0,right,holding,box
+MTL-SGF00106-023.mp4,163.47,165.07,right,holding,box
+MTL-SGF00106-023.mp4,165.6,166.13,right,holding,unknown object
+MTL-SGF00106-023.mp4,167.87,168.8,right,holding,box
+MTL-SGF00106-023.mp4,169.67,170.47,right,holding,unknown object
+MTL-SGF00106-023.mp4,172.47,173.27,left,holding,box
+MTL-SGF00106-023.mp4,174.4,174.87,left,touching_fixed,shelf
+MTL-SGF00106-023.mp4,174.4,174.87,right,touching_fixed,shelf
+MTL-SGF00106-023.mp4,175.4,175.87,left,holding,unknown object

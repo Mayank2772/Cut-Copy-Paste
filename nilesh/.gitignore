@@ -3,7 +3,6 @@ egohack-data/
 clips/
 clips_480p/
 frames/
-outputs/
 *.mp4
 *.mov
 *.avi

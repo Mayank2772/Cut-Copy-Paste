@@ -1,0 +1,134 @@
+{
+ "right:1118-1240": null,
+ "right:447-521": null,
+ "right:696-765": {
+  "object": "pencil",
+  "holding": true,
+  "boxes": [
+   [
+    672,
+    127,
+    998,
+    520
+   ],
+   [
+    806,
+    180,
+    998,
+    438
+   ],
+   [
+    157,
+    345,
+    928,
+    880
+   ]
+  ]
+ },
+ "left:192-252": null,
+ "right:1518-1567": {
+  "object": "circular saw",
+  "holding": true,
+  "boxes": [
+   [
+    210,
+    312,
+    1000,
+    1000
+   ],
+   [
+    0,
+    8,
+    712,
+    707
+   ],
+   null
+  ]
+ },
+ "left:64-112": {
+  "object": null,
+  "holding": false,
+  "boxes": [
+   null,
+   null,
+   null
+  ]
+ },
+ "right:1054-1099": {
+  "object": "marker",
+  "holding": true,
+  "boxes": [
+   [
+    272,
+    281,
+    513,
+    542
+   ],
+   [
+    323,
+    163,
+    417,
+    537
+   ],
+   [
+    269,
+    244,
+    497,
+    508
+   ]
+  ]
+ },
+ "right:72-115": {
+  "object": "circular saw",
+  "holding": true,
+  "boxes": [
+   [
+    17,
+    26,
+    680,
+    736
+   ],
+   [
+    0,
+    82,
+    638,
+    744
+   ],
+   null
+  ]
+ },
+ "right:13-56": null,
+ "right:271-311": {
+  "object": "cardboard",
+  "holding": true,
+  "boxes": [
+   [
+    0,
+    0,
+    482,
+    1000
+   ],
+   [
+    0,
+    171,
+    278,
+    715
+   ],
+   [
+    0,
+    737,
+    140,
+    1000
+   ]
+  ]
+ },
+ "left:1052-1089": {
+  "object": null,
+  "holding": false,
+  "boxes": [
+   null,
+   null,
+   null
+  ]
+ }
+}
