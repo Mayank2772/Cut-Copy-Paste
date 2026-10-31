@@ -1,10 +1,10 @@
 {
   "clip": "MTL-SGF00106-023.mp4",
   "frames_processed": 2700,
-  "detection_share": 0.6681481481481482,
-  "detection_share_without_recovery": 0.6270370370370371,
-  "processing_fps": 41.36185537855254,
+  "detection_share": 0.6607407407407407,
+  "detection_share_without_recovery": 0.6181481481481481,
+  "processing_fps": 6.731036490669905,
   "step": 2,
-  "rescued_by_retry": 72,
-  "recovered_near_last_position": 84
+  "rescued_by_retry": 81,
+  "recovered_near_last_position": 76
 }

@@ -62,6 +62,13 @@ def draw(img, last, i):
     """Draw one row of results on a frame, in place."""
     h_, w_ = img.shape[:2]
     hands = (last or {}).get("hands", [])
+    for obj in (last or {}).get("objects", []):
+        x1, y1, x2, y2 = [int(v) for v in obj["bbox"]]
+        colour = (80, 190, 255) if obj.get("stable") else (150, 150, 150)
+        label = f"{obj['name']} {obj.get('conf', 0):.0%}"
+        cv2.rectangle(img, (x1, y1), (x2, y2), colour, 2)
+        cv2.putText(img, label, (x1, max(16, y1 - 5)),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.55, colour, 2)
     for hd in hands:                                   # object box first, so skeletons draw on top
         st = hd.get("state")
         if st and hd.get("object_bbox"):
