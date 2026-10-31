@@ -22,7 +22,7 @@ def get_timeline(clip, out_dir, fps=4, model=None):
     cache = out_dir / "actions_raw.json"
     if cache.exists():
         return json.load(open(cache))
-    model = model or os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")  # check docs for current name
+    model = model or os.environ.get("GEMINI_MODEL", "gemini-3.8-flash")  # check docs for current name
     client = genai.Client()  # reads GEMINI_API_KEY from env
     f = client.files.upload(file=str(clip))
     try:

@@ -1,5 +1,6 @@
 """Usage:
   python run.py hands    CLIP [--step 2] [--clahe]
+  python run.py grab     CLIP [--clahe]     (fix left/right, write contacts.csv)
   python run.py render   CLIP [--clahe]
   python run.py timeline CLIP
 """
@@ -8,6 +9,7 @@ from pathlib import Path
 import cv2
 import pandas as pd
 from src.hands import run_hands
+from src.grab import detect
 from src.render import render
 from src.timeline import get_timeline, clean
 
@@ -20,7 +22,7 @@ def clahe(img):
 
 
 ap = argparse.ArgumentParser()
-ap.add_argument("cmd", choices=["hands", "render", "timeline"])
+ap.add_argument("cmd", choices=["hands", "grab", "render", "timeline"])
 ap.add_argument("clip")
 ap.add_argument("--step", type=int, default=2)
 ap.add_argument("--clahe", action="store_true")
@@ -30,6 +32,8 @@ out = Path("outputs") / stem
 
 if a.cmd == "hands":
     print(json.dumps(run_hands(a.clip, out, step=a.step, preprocess=clahe if a.clahe else None), indent=2))
+elif a.cmd == "grab":
+    print(json.dumps(detect(out, Path(a.clip).name), indent=2))
 elif a.cmd == "render":
     print("saved", render(a.clip, out))
 else:
