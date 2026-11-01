@@ -32,27 +32,12 @@ from src.common import F, fenv, hand_size, read_jsonl, write_jsonl
 # ---------------------------------------------------------------------------
 # Vocabulary – keep it general so the same pipeline works on many clips
 # ---------------------------------------------------------------------------
-PORTABLE = [
-    # wood / material (prefer specific names — avoid ultra-generic labels)
-    "wooden plank", "wooden board", "plywood sheet", "wooden panel",
-    "wooden piece", "plywood piece", "timber", "wood block",
-    # power tools
-    "power drill", "cordless drill", "circular saw", "power sander",
-    "orbital sander", "angle grinder", "jigsaw", "router", "nail gun",
-    # hand tools
-    "hammer", "screwdriver", "wrench", "pliers", "hand saw",
-    "clamp", "tape measure",
-    # small / distinct items
-    "marker pen", "pencil", "glue bottle", "sandpaper", "sanding block",
-    "paint can", "paint brush",
-    "electric cable", "power cord",
-    "cardboard box", "box",
-    "glove",
-]
-FIXED = [
-    "workbench", "table", "wooden frame", "shelf", "machine",
-    "floor", "wall", "cabinet", "bench",
-]
+from src.object_catalog import (
+    YOLO_PORTABLE_CLASSES as PORTABLE,
+    FIXED,
+    canonicalize_name,
+    enrich_detection,
+)
 
 TIPS = [4, 8, 12, 16, 20]
 MAX_AREA_FRAC = 0.40          # reject boxes that fill most of the frame
@@ -256,7 +241,7 @@ def run(clip, out_dir, conf=None, every=None):
                             if area(bx) > 0.75 * carea:
                                 continue  # fills the crop → background
                             last.append({
-                                "name": res.names[int(cl)],
+                                "name": canonicalize_name(res.names[int(cl)]),
                                 "conf": float(sc),
                                 "bbox": [
                                     float(bx[0]) + a, float(bx[1]) + b,
@@ -279,7 +264,7 @@ def run(clip, out_dir, conf=None, every=None):
                                 if area(bx) > 0.70 * carea:
                                     continue
                                 last.append({
-                                    "name": res.names[int(cl)],
+                                    "name": canonicalize_name(res.names[int(cl)]),
                                     "conf": float(sc),
                                     "bbox": [
                                         float(bx[0]) + a, float(bx[1]) + b,
@@ -289,6 +274,8 @@ def run(clip, out_dir, conf=None, every=None):
 
                     # Deduplicate heavily overlapping boxes (keep higher conf)
                     last = _nms(last, iou_thr=0.55)
+                    # Add catalogue metadata without changing boxes or confidence.
+                    last = [enrich_detection(o, W, H) for o in last]
 
                 dets[k] = last
                 if k % 200 == 0:
@@ -298,6 +285,10 @@ def run(clip, out_dir, conf=None, every=None):
         json.dump(dets, open(cache, "w"))
     cap.release()
 
+    dets = [
+        [enrich_detection(o, W, H) for o in frame]
+        for frame in dets
+    ]
     counts = Counter(o["name"] for d in dets[::every] for o in d)
     print("detected objects (count over sampled frames):",
           dict(counts.most_common(15)) or "NOTHING")

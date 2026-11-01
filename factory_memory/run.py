@@ -26,7 +26,9 @@ import sys
 from pathlib import Path
 
 from src.common import F, dirs
+from dotenv import load_dotenv
 
+load_dotenv()
 ap = argparse.ArgumentParser(
     description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
 )
@@ -124,7 +126,7 @@ if a.step == "serve":
                 import subprocess
                 record["status"] = "processing"
                 record["message"] = "Running hand, object and event analysis"
-                cmd = [sys.executable, str(root / "run.py"), "all", str(target), "--no-gemini"]
+                cmd = [sys.executable, str(root / "run.py"), "all", str(target)]
                 try:
                     proc = subprocess.run(cmd, cwd=root, capture_output=True, text=True)
                     record["log"] = (proc.stdout or "") + "\n" + (proc.stderr or "")

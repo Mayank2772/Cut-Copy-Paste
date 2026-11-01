@@ -29,14 +29,17 @@ function renderResults() {
   const box = $("results");
   $("resultCount").textContent = `${filtered.length} event${filtered.length === 1 ? "" : "s"}`;
   if (!filtered.length) { box.innerHTML = `<p class="p-4 text-sm text-slate-500">No matching events were found for this video.</p>`; return; }
-  box.innerHTML = filtered.map((e, idx) => `<button type="button" class="event-row w-full text-left px-3 py-3 flex gap-3 items-start transition" data-idx="${idx}" data-t="${Number(e.timestamp_start) || 0}">
+  box.innerHTML = filtered.map((e, idx) => `<button type="button" class="event-row w-full text-left px-3 py-3 flex gap-3 items-start transition" data-idx="${idx}"
+  data-t="${Number(e.timestamp_start) || 0}"
+  data-end="${Number(e.timestamp_end) || 0}">
     <div class="shrink-0 w-16 text-sm font-mono text-blue-700 pt-0.5">${fmtTime(e.timestamp_start)}</div>
     <div class="min-w-0 flex-1"><div class="flex flex-wrap items-center gap-1.5 mb-1">${eventBadge(e.event)}<span class="text-[10px] text-slate-500">${escapeHtml(e.confidence_label || "")}</span></div>
     <div class="text-sm font-medium truncate">${escapeHtml(e.object || "unknown object")}</div>
     <div class="text-xs text-slate-500">${escapeHtml(e.hand || "unknown")} hand · ${fmtTime(e.timestamp_start)} – ${fmtTime(e.timestamp_end)}</div></div></button>`).join("");
   box.querySelectorAll(".event-row").forEach((row) => row.addEventListener("click", () => {
     box.querySelectorAll(".event-row").forEach((r) => r.classList.remove("active"));
-    row.classList.add("active"); jumpTo(Number(row.dataset.t));
+    row.classList.add("active");
+jumpTo(Number(row.dataset.t), Number(row.dataset.end));
   }));
 }
 function searchEvents(query) {
@@ -44,12 +47,63 @@ function searchEvents(query) {
   filtered = !tokens.length ? allEvents.slice() : allEvents.filter((e) => tokens.every((t) => [e.object,e.hand,e.event,e.confidence_label,e.source,e.event_id].join(" ").toLowerCase().includes(t)));
   renderResults();
 }
-function jumpTo(t) {
+let activeSegment = null;
+
+function jumpTo(start, end) {
   const v = $("player");
-  if (!v || !Number.isFinite(t)) return;
-  const seek = () => { v.currentTime = Math.max(0, t); v.play().catch(() => {}); $("videoStatus").textContent = `Jumped to ${fmtTime(t)}`; };
-  if (v.readyState >= 1) seek(); else v.addEventListener("loadedmetadata", seek, { once: true });
+
+  if (!v || !Number.isFinite(start) || !Number.isFinite(end)) return;
+  if (end <= start) {
+    $("videoStatus").textContent = "Invalid event time range";
+    return;
+  }
+
+  // Replace any previously selected event boundary.
+  activeSegment = { start, end };
+
+  const seekAndPlay = () => {
+    if (!activeSegment) return;
+
+    v.currentTime = Math.max(0, start);
+
+    const playPromise = v.play();
+
+    if (playPromise) {
+      playPromise.catch(() => {
+        $("videoStatus").textContent = "Click play to start this event";
+      });
+    }
+
+    $("videoStatus").textContent =
+      `Playing event: ${fmtTime(start)} – ${fmtTime(end)}`;
+  };
+
+  if (v.readyState >= 1) {
+    seekAndPlay();
+  } else {
+    v.addEventListener("loadedmetadata", seekAndPlay, { once: true });
+  }
 }
+$("player").addEventListener("timeupdate", () => {
+  const v = $("player");
+
+  if (!activeSegment) return;
+
+  if (v.currentTime >= activeSegment.end) {
+    v.pause();
+    v.currentTime = activeSegment.end;
+
+    $("videoStatus").textContent =
+      `Event completed: ${fmtTime(activeSegment.start)} – ${fmtTime(activeSegment.end)}`;
+  }
+});
+$("player").addEventListener("play", () => {
+  const v = $("player");
+
+  if (activeSegment && v.currentTime >= activeSegment.end) {
+    v.currentTime = activeSegment.start;
+  }
+});
 function showVideo(url, label) {
   const v = $("player");
   v.src = url;
