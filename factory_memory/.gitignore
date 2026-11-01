@@ -8,6 +8,7 @@ egohack-data/
 *.task
 *.pt
 *.pth
+outputs/
 output_v/
 .DS_Store
 .env

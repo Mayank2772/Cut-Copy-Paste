@@ -1,216 +1,133 @@
-/**
- * Factory Memory UI
- * - Loads ../outputs/<clip>/events.json
- * - Plays video from a path relative to the frontend (usually ../egohack-data/...)
- * - Search + jump-to-timestamp
- */
+// this is the app.js
+
 let allEvents = [];
 let filtered = [];
-
 const $ = (id) => document.getElementById(id);
+let activeJob = null;
+let pollTimer = null;
 
-function fmtTime(s) {
-  s = Math.max(0, Number(s) || 0);
-  const m = Math.floor(s / 60);
-  const sec = Math.floor(s % 60);
-  const ds = Math.floor((s % 1) * 10);
-  return `${String(m).padStart(2, "0")}:${String(sec).padStart(2, "0")}.${ds}`;
+function fmtTime(value) {
+  const s = Math.max(0, Number(value) || 0);
+  return `${String(Math.floor(s / 60)).padStart(2, "0")}:${String(Math.floor(s % 60)).padStart(2, "0")}.${Math.floor((s % 1) * 10)}`;
 }
-
-function confBadge(label) {
-  const map = {
-    High: "bg-emerald-100 text-emerald-800",
-    Medium: "bg-amber-100 text-amber-800",
-    Low: "bg-rose-100 text-rose-800",
-  };
-  const cls = map[label] || "bg-slate-100 text-slate-700";
-  return `<span class="text-[10px] font-medium px-1.5 py-0.5 rounded ${cls}">${label || "—"}</span>`;
+function escapeHtml(value) {
+  return String(value ?? "").replace(/[&<>"']/g, (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;", "'":"&#39;"}[c]));
 }
-
+function setStatus(message, state = "info", progress = null) {
+  $("statusText").textContent = message;
+  const pill = $("statusPill");
+  pill.textContent = state === "processing" ? "Processing" : state === "completed" ? "Complete" : state === "failed" ? "Failed" : state === "uploading" ? "Uploading" : "Ready";
+  pill.className = "text-xs rounded-full px-3 py-1 " + (state === "completed" ? "bg-emerald-100 text-emerald-800" : state === "failed" ? "bg-rose-100 text-rose-800" : state === "processing" || state === "uploading" ? "bg-blue-100 text-blue-800" : "bg-slate-100 text-slate-600");
+  if (progress !== null) $("progressBar").style.width = `${Math.max(0, Math.min(100, progress))}%`;
+}
 function eventBadge(type) {
-  const map = {
-    possible_pickup: "bg-emerald-50 text-emerald-700 border-emerald-200",
-    hold: "bg-sky-50 text-sky-700 border-sky-200",
-    possible_release: "bg-amber-50 text-amber-700 border-amber-200",
-    approach: "bg-violet-50 text-violet-700 border-violet-200",
-    contact: "bg-slate-50 text-slate-700 border-slate-200",
-    tracking_uncertain: "bg-rose-50 text-rose-700 border-rose-200",
-  };
-  const cls = map[type] || "bg-slate-50 text-slate-600 border-slate-200";
-  return `<span class="text-[11px] px-1.5 py-0.5 rounded border ${cls}">${type}</span>`;
+  const styles = { possible_pickup:"bg-emerald-50 text-emerald-700 border-emerald-200", hold:"bg-sky-50 text-sky-700 border-sky-200", possible_release:"bg-amber-50 text-amber-700 border-amber-200", approach:"bg-violet-50 text-violet-700 border-violet-200", contact:"bg-slate-50 text-slate-700 border-slate-200", tracking_uncertain:"bg-rose-50 text-rose-700 border-rose-200" };
+  const cls = styles[type] || "bg-slate-50 text-slate-600 border-slate-200";
+  return `<span class="text-[11px] px-1.5 py-0.5 rounded border ${cls}">${escapeHtml(type || "event")}</span>`;
 }
-
 function renderResults() {
   const box = $("results");
   $("resultCount").textContent = `${filtered.length} event${filtered.length === 1 ? "" : "s"}`;
-
-  if (!filtered.length) {
-    box.innerHTML = `<p class="p-4 text-sm text-slate-500">No matching events.</p>`;
-    return;
-  }
-
-  box.innerHTML = filtered
-    .map(
-      (e, idx) => `
-    <button type="button"
-            class="event-row w-full text-left px-3 py-2.5 flex gap-3 items-start transition"
-            data-idx="${idx}"
-            data-t="${e.timestamp_start}">
-      <div class="shrink-0 w-14 text-sm font-mono text-blue-700 pt-0.5">
-        ${fmtTime(e.timestamp_start)}
-      </div>
-      <div class="min-w-0 flex-1">
-        <div class="flex flex-wrap items-center gap-1.5 mb-0.5">
-          ${eventBadge(e.event)}
-          ${confBadge(e.confidence_label)}
-        </div>
-        <div class="text-sm font-medium truncate">${e.object || "unknown"}</div>
-        <div class="text-xs text-slate-500">
-          ${e.hand || "?"} hand · ${fmtTime(e.timestamp_start)} → ${fmtTime(e.timestamp_end)}
-        </div>
-      </div>
-    </button>`
-    )
-    .join("");
-
-  box.querySelectorAll(".event-row").forEach((row) => {
-    row.addEventListener("click", () => {
-      box.querySelectorAll(".event-row").forEach((r) => r.classList.remove("active"));
-      row.classList.add("active");
-      jumpTo(Number(row.dataset.t));
-    });
-  });
+  if (!filtered.length) { box.innerHTML = `<p class="p-4 text-sm text-slate-500">No matching events were found for this video.</p>`; return; }
+  box.innerHTML = filtered.map((e, idx) => `<button type="button" class="event-row w-full text-left px-3 py-3 flex gap-3 items-start transition" data-idx="${idx}" data-t="${Number(e.timestamp_start) || 0}">
+    <div class="shrink-0 w-16 text-sm font-mono text-blue-700 pt-0.5">${fmtTime(e.timestamp_start)}</div>
+    <div class="min-w-0 flex-1"><div class="flex flex-wrap items-center gap-1.5 mb-1">${eventBadge(e.event)}<span class="text-[10px] text-slate-500">${escapeHtml(e.confidence_label || "")}</span></div>
+    <div class="text-sm font-medium truncate">${escapeHtml(e.object || "unknown object")}</div>
+    <div class="text-xs text-slate-500">${escapeHtml(e.hand || "unknown")} hand · ${fmtTime(e.timestamp_start)} – ${fmtTime(e.timestamp_end)}</div></div></button>`).join("");
+  box.querySelectorAll(".event-row").forEach((row) => row.addEventListener("click", () => {
+    box.querySelectorAll(".event-row").forEach((r) => r.classList.remove("active"));
+    row.classList.add("active"); jumpTo(Number(row.dataset.t));
+  }));
 }
-
 function searchEvents(query) {
-  const q = (query || "").toLowerCase().trim();
-  if (!q) {
-    filtered = allEvents.slice();
-    renderResults();
-    return;
-  }
-  const tokens = q.split(/\s+/).filter(Boolean);
-  filtered = allEvents.filter((e) => {
-    const hay = [
-      e.object,
-      e.hand,
-      e.event,
-      e.confidence_label,
-      e.source,
-      e.event_id,
-    ]
-      .join(" ")
-      .toLowerCase();
-    return tokens.every((t) => hay.includes(t));
-  });
+  const tokens = (query || "").toLowerCase().trim().split(/\s+/).filter(Boolean);
+  filtered = !tokens.length ? allEvents.slice() : allEvents.filter((e) => tokens.every((t) => [e.object,e.hand,e.event,e.confidence_label,e.source,e.event_id].join(" ").toLowerCase().includes(t)));
   renderResults();
 }
-
 function jumpTo(t) {
   const v = $("player");
   if (!v || !Number.isFinite(t)) return;
-  const go = () => {
-    v.currentTime = Math.max(0, t);
-    v.play().catch(() => {});
-    $("videoStatus").textContent = `Jumped to ${fmtTime(t)}`;
-  };
-  if (v.readyState >= 1) go();
-  else v.addEventListener("loadedmetadata", go, { once: true });
+  const seek = () => { v.currentTime = Math.max(0, t); v.play().catch(() => {}); $("videoStatus").textContent = `Jumped to ${fmtTime(t)}`; };
+  if (v.readyState >= 1) seek(); else v.addEventListener("loadedmetadata", seek, { once: true });
 }
-
-function showPathHint(msg) {
-  const el = $("pathHint");
-  if (!msg) {
-    el.classList.add("hidden");
-    el.textContent = "";
-    return;
-  }
-  el.textContent = msg;
-  el.classList.remove("hidden");
-}
-
-function setVideo(path) {
+function showVideo(url, label) {
   const v = $("player");
-  let src = (path || $("videoPath").value || "").trim();
-  if (!src) return;
-
-  // Normalise: if user pastes absolute path or missing ../, fix common cases
-  if (src.startsWith("egohack-data/")) src = "../" + src;
-  if (src.startsWith("/Users/") || src.startsWith("/home/")) {
-    // Absolute OS path won't work in the browser — convert to relative if possible
-    const marker = "egohack-data/";
-    const i = src.indexOf(marker);
-    if (i >= 0) src = "../" + src.slice(i);
-    else {
-      showPathHint("Use a path relative to the frontend folder, e.g. ../egohack-data/clips_480p/your.mp4");
-    }
-  }
-
-  $("videoPath").value = src;
-  v.src = src;
+  v.src = url;
   v.load();
-
-  v.onerror = () => {
-    $("videoStatus").textContent = "Video failed to load";
-    showPathHint(
-      "Video not found at: " + src +
-      " — put the file under egohack-data/clips_480p/ and use ../egohack-data/clips_480p/<name>.mp4"
-    );
-  };
-  v.onloadeddata = () => {
-    $("videoStatus").textContent = "Video ready · " + src;
-    showPathHint("");
-  };
+  v.onerror = () => { $("videoStatus").textContent = "Could not play this video format in the browser"; };
+  v.onloadeddata = () => { $("videoStatus").textContent = label || "Video ready"; };
 }
-
-async function loadEvents() {
-  const clip = $("clipName").value.trim().replace(/\.mp4$/i, "");
-  if (!clip) {
-    alert("Enter a clip folder name (outputs/<clip>/ without .mp4)");
-    return;
-  }
-  $("clipName").value = clip;
-  const url = `../outputs/${clip}/events.json`;
-  $("resultCount").textContent = "Loading…";
-  try {
-    const res = await fetch(url);
-    if (!res.ok) {
-      throw new Error(
-        `HTTP ${res.status} — missing ${url}\n\n` +
-        `1) Run: python run.py events egohack-data/clips_480p/${clip}.mp4\n` +
-        `2) Clip folder name must be exactly: ${clip}`
-      );
-    }
-    allEvents = await res.json();
-    if (!Array.isArray(allEvents)) allEvents = [];
-    filtered = allEvents.slice();
-    renderResults();
-    $("videoStatus").textContent = `Loaded ${allEvents.length} events from ${clip}`;
-
-    // Auto video path
-    const defaultVid = `../egohack-data/clips_480p/${clip}.mp4`;
-    $("videoPath").value = defaultVid;
-    setVideo(defaultVid);
-  } catch (err) {
-    allEvents = [];
-    filtered = [];
-    renderResults();
-    $("resultCount").textContent = "Failed to load";
-    alert(String(err.message || err));
-  }
-}
-
-$("loadBtn").addEventListener("click", loadEvents);
-$("setVideoBtn").addEventListener("click", () => setVideo());
-$("searchBox").addEventListener("input", (e) => searchEvents(e.target.value));
-document.querySelectorAll(".chip").forEach((btn) => {
-  btn.addEventListener("click", () => {
-    $("searchBox").value = btn.dataset.q;
-    searchEvents(btn.dataset.q);
+function uploadVideo(file) {
+  return new Promise((resolve, reject) => {
+    const xhr = new XMLHttpRequest();
+    xhr.open("POST", `/api/upload?filename=${encodeURIComponent(file.name)}`);
+    xhr.setRequestHeader("Content-Type", "application/octet-stream");
+    xhr.upload.onprogress = (e) => { if (e.lengthComputable) setStatus(`Uploading ${file.name}: ${Math.round(e.loaded / e.total * 100)}%`, "uploading", e.loaded / e.total * 100); };
+    xhr.onload = () => { let data = {}; try { data = JSON.parse(xhr.responseText); } catch {} if (xhr.status >= 200 && xhr.status < 300) resolve(data); else reject(new Error(data.error || xhr.responseText || `Upload failed (${xhr.status})`)); };
+    xhr.onerror = () => reject(new Error("Network error while uploading video"));
+    xhr.send(file);
   });
-});
+}
+async function startAnalysis() {
+  const file = $("videoFile").files[0];
+  if (!file) { alert("Choose a video file first."); return; }
+  const allowed = /\.(mp4|mov|avi|webm|m4v)$/i;
+  if (!allowed.test(file.name)) { alert("Choose an MP4, MOV, AVI, WebM or M4V file."); return; }
+  $("uploadBtn").disabled = true;
+  $("errorDetails").classList.add("hidden");
+  allEvents = []; filtered = []; renderResults();
+  setStatus("Uploading video…", "uploading", 0);
+  try {
+    const result = await uploadVideo(file);
+    activeJob = result.job_id;
+    const originalUrl = `/media/uploads/${encodeURIComponent(result.stored_name || "")}`;
+    $("originalVideo").href = originalUrl;
+    $("originalVideoWrap").classList.remove("hidden");
+    setStatus("Upload complete. Starting ML analysis…", "processing", 3);
+    pollJob();
+  } catch (err) {
+    setStatus(err.message, "failed", 0);
+    $("uploadBtn").disabled = false;
+  }
+}
+async function pollJob() {
+  if (!activeJob) return;
+  try {
+    const res = await fetch(`/api/status/${activeJob}`, { cache: "no-store" });
+    const job = await res.json();
+    if (!res.ok) throw new Error(job.error || "Could not read processing status");
+    if (job.status === "queued" || job.status === "processing") {
+      setStatus(`${job.message || "Processing video"}. This can take a while for long clips.`, "processing", 10);
+      pollTimer = setTimeout(pollJob, 2500);
+      return;
+    }
+    if (job.status === "failed") {
+      setStatus(job.message || "Processing failed", "failed", 0);
+      if (job.log_available) {
+        const logRes = await fetch(`/api/log/${activeJob}`, { cache: "no-store" });
+        const logData = await logRes.json();
+        $("errorDetails").classList.remove("hidden");
+        $("errorLog").textContent = logData.log || "No pipeline log was recorded.";
+      }
+      $("uploadBtn").disabled = false;
+      return;
+    }
+    if (job.status === "completed") {
+      setStatus(job.message || "Analysis complete", "completed", 100);
+      if (job.output_video) showVideo(job.output_video, "Processed output ready");
+      const eventRes = await fetch(job.events || `/api/events/${activeJob}`, { cache: "no-store" });
+      allEvents = eventRes.ok ? await eventRes.json() : [];
+      if (!Array.isArray(allEvents)) allEvents = [];
+      searchEvents($("searchBox").value);
+      $("uploadBtn").disabled = false;
+      if (!job.output_video) $("videoStatus").textContent = "No rendered output video was generated";
+    }
+  } catch (err) {
+    setStatus(err.message, "failed");
+    $("uploadBtn").disabled = false;
+  }
+}
 
-// Auto-load default clip on open
-window.addEventListener("DOMContentLoaded", () => {
-  loadEvents();
-});
+$("uploadBtn").addEventListener("click", startAnalysis);
+$("searchBox").addEventListener("input", (e) => searchEvents(e.target.value));
+document.querySelectorAll(".chip").forEach((btn) => btn.addEventListener("click", () => { $("searchBox").value = btn.dataset.q; searchEvents(btn.dataset.q); }));

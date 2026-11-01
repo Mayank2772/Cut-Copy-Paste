@@ -1,150 +1,51 @@
 # Factory Memory
 
-**Turn raw factory videos into searchable, timestamped hand–object interaction events.**
+Local video-analysis prototype for hand/object tracking and searchable event timelines.
 
-Factory Memory processes first-person factory footage, detects hands and nearby objects, estimates contact / pickup / release events, and lets you **search those events and jump straight to the moment in the video**.
+## 1. Environment (macOS)
 
-> Prototype / hackathon project. Events are detections and heuristics — validate important claims against the video.
-
----
-
-## What you get
-
-| Capability | Implementation |
-|---|---|
-| Hand tracking | MediaPipe Hand Landmarker + recovery + smoothing |
-| Object detection | YOLO-World on expanded hand crops + workspace crop |
-| Contact / grab / release | State machine over fingertip–box proximity |
-| Searchable events | `events.json` + `events.csv` |
-| UI | Search, filter, click → video jumps to timestamp |
-
----
-
-## Pipeline
-
-```text
-FACTORY VIDEO
-      │
-      ▼
-1. track     MediaPipe hands          → 1_hands.jsonl
-2. grip      left/right, gaps         → 2_hands_grip.jsonl
-3. objects   YOLO-World near hands    → 3_hands_objects.jsonl
-4. contacts  grab / hold / release    → contacts.csv + 5_hands_final.jsonl
-5. events    Factory Memory records   → events.json
-6. render    overlay video            → output_v/<clip>/overlay.mp4
-```
-
----
-
-## Quick start
+From this project folder:
 
 ```bash
-# Environment
-python -m venv .venv
-source .venv/bin/activate          # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-
-# Optional: Gemini for better object names
-export GEMINI_API_KEY="..."
-
-# Place footage (never commit it)
-# egohack-data/clips_480p/<clip>.mp4
-# hand_landmarker.task   (MediaPipe model)
-# yolov8s-worldv2.pt     (YOLO-World weights)
-
-# Full pipeline
-python run.py all egohack-data/clips_480p/<clip>.mp4
-
-# Or step by step
-python run.py track    egohack-data/clips_480p/<clip>.mp4
-python run.py grip     egohack-data/clips_480p/<clip>.mp4
-python run.py objects  egohack-data/clips_480p/<clip>.mp4
-python run.py contacts egohack-data/clips_480p/<clip>.mp4
-python run.py events   egohack-data/clips_480p/<clip>.mp4
-python run.py render   egohack-data/clips_480p/<clip>.mp4
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
 ```
 
-### Open the Factory Memory UI
+The hand model is required at the project root as `hand_landmarker.task`. Download the MediaPipe Hand Landmarker task model and place it next to `run.py`.
+
+The object-detection stage also expects the YOLO world model configured by `src/objects.py` (commonly `yolov8s-worldv2.pt`). Put the required weights in the configured location before processing.
+
+## 2. Start the application
 
 ```bash
+source .venv/bin/activate
 python run.py serve
-# → http://127.0.0.1:8765/frontend/
 ```
 
-1. Enter the clip folder name (e.g. `MTL-SGF00106-023`).
-2. Click **Load events**.
-3. Set the video path if needed.
-4. Search for `screwdriver`, `right hand`, `pickup`, `release`, …
-5. Click a row — the video jumps to that timestamp.
+Open `http://127.0.0.1:8765/frontend/`. Select a normal MP4, MOV, AVI, WebM or M4V video and click **Upload & analyse**. The server saves the uploaded file under `uploads/`, runs the existing `all` pipeline, writes event data under `outputs/<uploaded-clip>/`, and writes the annotated video under `output_v/<uploaded-clip>/`.
 
----
+The UI polls processing status, loads the rendered video and displays the searchable event timeline. Clicking an event seeks the output video to its start timestamp. The local server includes HTTP byte-range support for browser video seeking.
 
-## Event record format
+Processing is local and may take several minutes depending on video length, resolution, hardware and model sizes. Keep the terminal running while analysis is in progress. The upload endpoint currently accepts files up to 2 GB. Jobs are held in server memory, so do not restart the server during a running job.
 
-```json
-{
-  "event_id": "evt_001",
-  "timestamp_start": 12.2,
-  "timestamp_end": 16.0,
-  "hand": "right",
-  "object": "power sander",
-  "event": "possible_pickup",
-  "confidence": 0.89,
-  "confidence_label": "High",
-  "source": "detector",
-  "clip": "MTL-SGF00106-023.mp4"
-}
+## 3. Existing command-line workflow
+
+The original CLI remains available:
+
+```bash
+python run.py all egohack-data/clips_480p/your-video.mp4 --no-gemini
+python run.py serve
 ```
 
-Event types: `possible_pickup`, `hold`, `possible_release`, `approach`, `contact`, `tracking_uncertain`.
+You can omit `--no-gemini` if you have configured the Gemini API and want Gemini naming. Event names such as possible pickup/release are heuristics derived from the current tracking pipeline; they are not guaranteed ground truth.
 
----
+## 4. Output locations
 
-## Project layout
+- `uploads/`: uploaded source videos
+- `outputs/<clip>/events.json`: searchable event records
+- `outputs/<clip>/contacts.csv`: contact/state timeline
+- `output_v/<clip>/overlay.mp4` or `overlay_raw.avi`: annotated output video
 
-```text
-nilesh/   (this folder)
-├── run.py                 entry point
-├── src/
-│   ├── tracking.py        hands
-│   ├── grip.py
-│   ├── objects.py         nearby + contact objects
-│   ├── states.py          grab/hold/release state machine
-│   ├── events.py          → events.json  (Factory Memory)
-│   ├── naming.py          optional Gemini names
-│   ├── render.py          overlay video
-│   ├── timeline.py        PS3 actions (optional)
-│   ├── label.py           accuracy helper
-│   └── common.py
-├── frontend/
-│   ├── index.html
-│   └── app.js
-├── outputs/<clip>/        data only (json/csv)
-├── output_v/<clip>/       overlay videos
-├── requirements.txt
-└── README.md
-```
-
----
-
-## Evaluation ideas
-
-- Hand tracking: % of frames with correct left/right on a 100-frame sample.
-- Events: precision of `possible_pickup` / `possible_release` vs manual review.
-- Search: does “screwdriver” return the expected timestamps?
-- Runtime: frames/sec on laptop CPU.
-
----
-
-## Data rules
-
-- Use footage only as authorized for the hackathon.
-- Do not commit videos, frames, or screenshots.
-- Keep `egohack-data/` and model weights out of Git (`.gitignore`).
-- Delete temporary uploads when the event ends.
-
----
-
-## License / team
-
-Add team details and license only if distribution is permitted. Dataset rights remain with the data provider.
+This server binds to `127.0.0.1` and is intended for local use only. Do not expose it to a public network; factory footage may be restricted.
