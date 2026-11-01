@@ -2,254 +2,249 @@ clip,t_start,t_end,hand,state,object_name,source,fingers_bent_avg,near_object_sh
 mytronlabs-000003-002.mp4,0.0,0.18,right,grab,marker pen,detector,4,1.0
 mytronlabs-000003-002.mp4,0.18,0.36,right,hold,marker pen,detector,4,1.0
 mytronlabs-000003-002.mp4,0.36,0.53,right,release,marker pen,detector,4,1.0
-mytronlabs-000003-002.mp4,0.6,0.73,left,grab,wooden plank,detector,3.1,0.86
-mytronlabs-000003-002.mp4,0.73,0.87,left,hold,wooden plank,detector,3.1,0.86
-mytronlabs-000003-002.mp4,0.87,1.0,left,release,wooden plank,detector,3.1,0.86
-mytronlabs-000003-002.mp4,1.33,1.63,right,grab,paint can,detector,3.8,0.92
-mytronlabs-000003-002.mp4,1.63,2.63,right,hold,paint can,detector,3.8,0.92
-mytronlabs-000003-002.mp4,1.73,2.2,left,approach,angle grinder,detector,4.0,0.98
-mytronlabs-000003-002.mp4,2.2,2.5,left,grab,angle grinder,detector,4.0,0.98
-mytronlabs-000003-002.mp4,2.5,4.83,left,hold,angle grinder,detector,4.0,0.98
-mytronlabs-000003-002.mp4,2.63,2.93,right,release,paint can,detector,3.8,0.92
-mytronlabs-000003-002.mp4,3.4,3.62,right,grab,marker pen,detector,3.9,0.82
-mytronlabs-000003-002.mp4,3.62,3.84,right,hold,marker pen,detector,3.9,0.82
-mytronlabs-000003-002.mp4,3.84,4.07,right,release,marker pen,detector,3.9,0.82
-mytronlabs-000003-002.mp4,4.83,5.13,left,release,angle grinder,detector,4.0,0.98
-mytronlabs-000003-002.mp4,5.2,5.87,left,approach,glove,detector,4,0.72
-mytronlabs-000003-002.mp4,5.87,6.17,left,grab,glove,detector,4,0.72
-mytronlabs-000003-002.mp4,6.17,13.1,left,hold,glove,detector,4,0.72
-mytronlabs-000003-002.mp4,8.07,8.37,right,grab,marker pen,detector,4.0,0.88
-mytronlabs-000003-002.mp4,8.37,9.3,right,hold,marker pen,detector,4.0,0.88
-mytronlabs-000003-002.mp4,9.3,9.6,right,release,marker pen,detector,4.0,0.88
-mytronlabs-000003-002.mp4,10.8,11.1,right,grab,glove,detector,4,1.0
-mytronlabs-000003-002.mp4,11.1,11.43,right,hold,glove,detector,4,1.0
-mytronlabs-000003-002.mp4,11.43,11.73,right,release,glove,detector,4,1.0
-mytronlabs-000003-002.mp4,13.1,13.4,left,release,glove,detector,4,0.72
-mytronlabs-000003-002.mp4,13.2,13.5,right,grab,marker pen,detector,3.8,0.77
-mytronlabs-000003-002.mp4,13.5,14.57,right,hold,marker pen,detector,3.8,0.77
-mytronlabs-000003-002.mp4,13.93,14.23,left,grab,pliers,detector,4,0.83
-mytronlabs-000003-002.mp4,14.23,15.9,left,hold,pliers,detector,4,0.83
-mytronlabs-000003-002.mp4,14.57,14.87,right,release,marker pen,detector,3.8,0.77
-mytronlabs-000003-002.mp4,15.9,16.2,left,release,pliers,detector,4,0.83
-mytronlabs-000003-002.mp4,17.0,17.3,left,grab,wooden plank,detector,4,0.91
-mytronlabs-000003-002.mp4,17.2,17.5,right,grab,angle grinder,detector,3.7,0.81
-mytronlabs-000003-002.mp4,17.3,18.77,left,hold,wooden plank,detector,4,0.91
-mytronlabs-000003-002.mp4,17.5,17.9,right,hold,angle grinder,detector,3.7,0.81
-mytronlabs-000003-002.mp4,17.9,18.2,right,release,angle grinder,detector,3.7,0.81
-mytronlabs-000003-002.mp4,18.6,18.9,right,grab,marker pen,detector,3.8,1.0
-mytronlabs-000003-002.mp4,18.77,19.07,left,release,wooden plank,detector,4,0.91
-mytronlabs-000003-002.mp4,18.9,20.17,right,hold,marker pen,detector,3.8,1.0
+mytronlabs-000003-002.mp4,0.6,0.73,left,grab,wooden plank,detector,3.1,0.43
+mytronlabs-000003-002.mp4,0.73,0.87,left,hold,wooden plank,detector,3.1,0.43
+mytronlabs-000003-002.mp4,0.87,1.0,left,release,wooden plank,detector,3.1,0.43
+mytronlabs-000003-002.mp4,1.33,1.63,right,grab,marker pen,detector,3.8,0.68
+mytronlabs-000003-002.mp4,1.63,2.63,right,hold,marker pen,detector,3.8,0.68
+mytronlabs-000003-002.mp4,1.73,2.2,left,approach,angle grinder,detector,4.0,0.53
+mytronlabs-000003-002.mp4,2.2,2.5,left,grab,angle grinder,detector,4.0,0.53
+mytronlabs-000003-002.mp4,2.5,4.83,left,hold,angle grinder,detector,4.0,0.53
+mytronlabs-000003-002.mp4,2.63,2.93,right,release,marker pen,detector,3.8,0.68
+mytronlabs-000003-002.mp4,3.4,3.62,right,grab,marker pen,detector,3.9,0.36
+mytronlabs-000003-002.mp4,3.62,3.84,right,hold,marker pen,detector,3.9,0.36
+mytronlabs-000003-002.mp4,3.84,4.07,right,release,marker pen,detector,3.9,0.36
+mytronlabs-000003-002.mp4,4.83,5.13,left,release,angle grinder,detector,4.0,0.53
+mytronlabs-000003-002.mp4,5.33,5.87,left,approach,orbital sander,detector,4,0.57
+mytronlabs-000003-002.mp4,5.87,6.17,left,grab,orbital sander,detector,4,0.57
+mytronlabs-000003-002.mp4,6.17,13.1,left,hold,orbital sander,detector,4,0.57
+mytronlabs-000003-002.mp4,8.07,8.37,right,grab,marker pen,detector,4.0,0.79
+mytronlabs-000003-002.mp4,8.37,9.3,right,hold,marker pen,detector,4.0,0.79
+mytronlabs-000003-002.mp4,9.3,9.6,right,release,marker pen,detector,4.0,0.79
+mytronlabs-000003-002.mp4,10.8,11.1,right,grab,glove,detector,4,0.4
+mytronlabs-000003-002.mp4,11.1,11.43,right,hold,glove,detector,4,0.4
+mytronlabs-000003-002.mp4,11.43,11.73,right,release,glove,detector,4,0.4
+mytronlabs-000003-002.mp4,13.1,13.4,left,release,orbital sander,detector,4,0.57
+mytronlabs-000003-002.mp4,13.2,13.5,right,grab,marker pen,detector,3.8,0.69
+mytronlabs-000003-002.mp4,13.5,14.57,right,hold,marker pen,detector,3.8,0.69
+mytronlabs-000003-002.mp4,13.93,14.23,left,grab,orbital sander,detector,4,0.34
+mytronlabs-000003-002.mp4,14.23,15.9,left,hold,orbital sander,detector,4,0.34
+mytronlabs-000003-002.mp4,14.57,14.87,right,release,marker pen,detector,3.8,0.69
+mytronlabs-000003-002.mp4,15.9,16.2,left,release,orbital sander,detector,4,0.34
+mytronlabs-000003-002.mp4,17.0,17.3,left,grab,marker pen,detector,4,0.62
+mytronlabs-000003-002.mp4,17.2,17.5,right,grab,marker pen,detector,3.7,0.44
+mytronlabs-000003-002.mp4,17.3,18.77,left,hold,marker pen,detector,4,0.62
+mytronlabs-000003-002.mp4,17.5,17.9,right,hold,marker pen,detector,3.7,0.44
+mytronlabs-000003-002.mp4,17.9,18.2,right,release,marker pen,detector,3.7,0.44
+mytronlabs-000003-002.mp4,18.6,18.9,right,grab,marker pen,detector,3.8,0.9
+mytronlabs-000003-002.mp4,18.77,19.07,left,release,marker pen,detector,4,0.62
+mytronlabs-000003-002.mp4,18.9,20.17,right,hold,marker pen,detector,3.8,0.9
 mytronlabs-000003-002.mp4,19.13,19.47,left,approach,wooden plank,detector,3,1.0
 mytronlabs-000003-002.mp4,19.47,19.62,left,grab,wooden plank,detector,3,1.0
 mytronlabs-000003-002.mp4,19.62,19.78,left,hold,wooden plank,detector,3,1.0
 mytronlabs-000003-002.mp4,19.78,19.93,left,release,wooden plank,detector,3,1.0
-mytronlabs-000003-002.mp4,20.0,20.33,left,approach,glove,detector,4.0,0.64
-mytronlabs-000003-002.mp4,20.17,20.47,right,release,marker pen,detector,3.8,1.0
-mytronlabs-000003-002.mp4,20.33,20.63,left,grab,glove,detector,4.0,0.64
-mytronlabs-000003-002.mp4,20.63,21.83,left,hold,glove,detector,4.0,0.64
-mytronlabs-000003-002.mp4,21.67,21.93,right,grab,glove,detector,4,0.31
-mytronlabs-000003-002.mp4,21.83,22.13,left,release,glove,detector,4.0,0.64
-mytronlabs-000003-002.mp4,21.93,22.2,right,hold,glove,detector,4,0.31
-mytronlabs-000003-002.mp4,22.2,22.47,right,release,glove,detector,4,0.31
-mytronlabs-000003-002.mp4,22.87,23.17,left,grab,glove,detector,3.9,0.92
-mytronlabs-000003-002.mp4,23.13,23.43,right,grab,marker pen,detector,4.0,0.84
-mytronlabs-000003-002.mp4,23.17,28.3,left,hold,glove,detector,3.9,0.92
-mytronlabs-000003-002.mp4,23.43,33.17,right,hold,marker pen,detector,4.0,0.84
-mytronlabs-000003-002.mp4,28.3,28.6,left,release,glove,detector,3.9,0.92
-mytronlabs-000003-002.mp4,30.6,30.9,left,grab,marker pen,detector,3.4,0.73
-mytronlabs-000003-002.mp4,30.9,45.23,left,hold,marker pen,detector,3.4,0.73
-mytronlabs-000003-002.mp4,33.17,33.47,right,release,marker pen,detector,4.0,0.84
+mytronlabs-000003-002.mp4,20.17,20.47,right,release,marker pen,detector,3.8,0.9
+mytronlabs-000003-002.mp4,20.93,21.6,left,touching_fixed,wooden frame,detector,,
+mytronlabs-000003-002.mp4,22.87,23.17,left,grab,orbital sander,detector,3.9,0.84
+mytronlabs-000003-002.mp4,23.13,23.43,right,grab,marker pen,detector,4.0,0.78
+mytronlabs-000003-002.mp4,23.17,28.3,left,hold,orbital sander,detector,3.9,0.84
+mytronlabs-000003-002.mp4,23.43,33.17,right,hold,marker pen,detector,4.0,0.78
+mytronlabs-000003-002.mp4,28.3,28.6,left,release,orbital sander,detector,3.9,0.84
+mytronlabs-000003-002.mp4,30.6,30.9,left,grab,marker pen,detector,3.4,0.77
+mytronlabs-000003-002.mp4,30.9,45.23,left,hold,marker pen,detector,3.4,0.77
+mytronlabs-000003-002.mp4,33.17,33.47,right,release,marker pen,detector,4.0,0.78
 mytronlabs-000003-002.mp4,36.67,36.82,right,grab,orbital sander,detector,4,0.25
 mytronlabs-000003-002.mp4,36.82,36.98,right,hold,orbital sander,detector,4,0.25
 mytronlabs-000003-002.mp4,36.98,37.13,right,release,orbital sander,detector,4,0.25
-mytronlabs-000003-002.mp4,44.87,45.17,right,grab,marker pen,detector,3.7,0.94
-mytronlabs-000003-002.mp4,45.17,45.63,right,hold,marker pen,detector,3.7,0.94
-mytronlabs-000003-002.mp4,45.23,45.53,left,release,marker pen,detector,3.4,0.73
-mytronlabs-000003-002.mp4,45.63,45.93,right,release,marker pen,detector,3.7,0.94
-mytronlabs-000003-002.mp4,46.0,46.93,left,touching_fixed,angle grinder,detector,4,0.4
-mytronlabs-000003-002.mp4,47.2,47.87,right,approach,wooden plank,detector,3.6,0.57
-mytronlabs-000003-002.mp4,47.87,48.0,right,grab,wooden plank,detector,3.6,0.57
-mytronlabs-000003-002.mp4,48.0,48.13,right,hold,wooden plank,detector,3.6,0.57
-mytronlabs-000003-002.mp4,48.13,48.27,right,release,wooden plank,detector,3.6,0.57
-mytronlabs-000003-002.mp4,49.13,49.43,right,grab,marker pen,detector,3.8,0.81
-mytronlabs-000003-002.mp4,49.27,49.57,left,grab,pliers,detector,3.5,0.76
-mytronlabs-000003-002.mp4,49.43,57.97,right,hold,marker pen,detector,3.8,0.81
-mytronlabs-000003-002.mp4,49.57,56.17,left,hold,pliers,detector,3.5,0.76
-mytronlabs-000003-002.mp4,56.17,56.47,left,release,pliers,detector,3.5,0.76
-mytronlabs-000003-002.mp4,57.73,58.03,left,grab,orbital sander,detector,4,0.62
-mytronlabs-000003-002.mp4,57.97,58.27,right,release,marker pen,detector,3.8,0.81
-mytronlabs-000003-002.mp4,58.03,58.97,left,hold,orbital sander,detector,4,0.62
-mytronlabs-000003-002.mp4,58.97,59.27,left,release,orbital sander,detector,4,0.62
-mytronlabs-000003-002.mp4,59.13,59.43,right,grab,wooden plank,detector,4,0.95
-mytronlabs-000003-002.mp4,59.43,62.63,right,hold,wooden plank,detector,4,0.95
-mytronlabs-000003-002.mp4,59.8,60.09,left,grab,wooden plank,detector,3.7,1.0
-mytronlabs-000003-002.mp4,60.09,60.38,left,hold,wooden plank,detector,3.7,1.0
-mytronlabs-000003-002.mp4,60.38,60.67,left,release,wooden plank,detector,3.7,1.0
-mytronlabs-000003-002.mp4,61.07,62.53,left,approach,glove,detector,3.9,0.63
-mytronlabs-000003-002.mp4,62.53,62.83,left,grab,glove,detector,3.9,0.63
-mytronlabs-000003-002.mp4,62.63,62.93,right,release,wooden plank,detector,4,0.95
-mytronlabs-000003-002.mp4,62.83,63.43,left,hold,glove,detector,3.9,0.63
-mytronlabs-000003-002.mp4,63.0,63.4,right,approach,orbital sander,detector,3.9,0.98
-mytronlabs-000003-002.mp4,63.4,63.7,right,grab,orbital sander,detector,3.9,0.98
-mytronlabs-000003-002.mp4,63.43,63.73,left,release,glove,detector,3.9,0.63
-mytronlabs-000003-002.mp4,63.7,66.97,right,hold,orbital sander,detector,3.9,0.98
-mytronlabs-000003-002.mp4,65.33,66.8,left,approach,orbital sander,detector,4,0.62
-mytronlabs-000003-002.mp4,66.8,67.1,left,grab,orbital sander,detector,4,0.62
-mytronlabs-000003-002.mp4,66.97,67.27,right,release,orbital sander,detector,3.9,0.98
-mytronlabs-000003-002.mp4,67.1,67.5,left,hold,orbital sander,detector,4,0.62
-mytronlabs-000003-002.mp4,67.5,67.8,left,release,orbital sander,detector,4,0.62
-mytronlabs-000003-002.mp4,67.93,68.23,right,grab,marker pen,detector,3.4,0.56
-mytronlabs-000003-002.mp4,68.23,72.97,right,hold,marker pen,detector,3.4,0.56
-mytronlabs-000003-002.mp4,68.27,68.57,left,grab,pliers,detector,3.6,0.67
-mytronlabs-000003-002.mp4,68.57,79.97,left,hold,pliers,detector,3.6,0.67
-mytronlabs-000003-002.mp4,72.97,73.27,right,release,marker pen,detector,3.4,0.56
-mytronlabs-000003-002.mp4,73.33,73.93,right,touching_fixed,table,detector,,
+mytronlabs-000003-002.mp4,44.87,45.17,right,grab,marker pen,detector,3.7,0.82
+mytronlabs-000003-002.mp4,45.17,45.63,right,hold,marker pen,detector,3.7,0.82
+mytronlabs-000003-002.mp4,45.23,45.53,left,release,marker pen,detector,3.4,0.77
+mytronlabs-000003-002.mp4,45.63,45.93,right,release,marker pen,detector,3.7,0.82
+mytronlabs-000003-002.mp4,45.67,46.0,left,approach,hand saw,detector,4,0.67
+mytronlabs-000003-002.mp4,46.0,46.3,left,grab,hand saw,detector,4,0.67
+mytronlabs-000003-002.mp4,46.3,46.63,left,hold,hand saw,detector,4,0.67
+mytronlabs-000003-002.mp4,46.63,46.93,left,release,hand saw,detector,4,0.67
+mytronlabs-000003-002.mp4,47.47,47.87,right,approach,glove,detector,3.6,0.43
+mytronlabs-000003-002.mp4,47.87,48.0,right,grab,glove,detector,3.6,0.43
+mytronlabs-000003-002.mp4,48.0,48.13,right,hold,glove,detector,3.6,0.43
+mytronlabs-000003-002.mp4,48.13,48.27,right,release,glove,detector,3.6,0.43
+mytronlabs-000003-002.mp4,49.13,49.43,right,grab,marker pen,detector,3.8,0.64
+mytronlabs-000003-002.mp4,49.27,49.57,left,grab,marker pen,detector,3.5,0.49
+mytronlabs-000003-002.mp4,49.43,57.97,right,hold,marker pen,detector,3.8,0.64
+mytronlabs-000003-002.mp4,49.57,56.17,left,hold,marker pen,detector,3.5,0.49
+mytronlabs-000003-002.mp4,56.17,56.47,left,release,marker pen,detector,3.5,0.49
+mytronlabs-000003-002.mp4,57.73,58.03,left,grab,orbital sander,detector,4,0.42
+mytronlabs-000003-002.mp4,57.97,58.27,right,release,marker pen,detector,3.8,0.64
+mytronlabs-000003-002.mp4,58.03,58.97,left,hold,orbital sander,detector,4,0.42
+mytronlabs-000003-002.mp4,58.97,59.27,left,release,orbital sander,detector,4,0.42
+mytronlabs-000003-002.mp4,59.13,59.43,right,grab,marker pen,detector,4,0.81
+mytronlabs-000003-002.mp4,59.43,62.63,right,hold,marker pen,detector,4,0.81
+mytronlabs-000003-002.mp4,59.8,60.67,left,touching_fixed,wooden plank,detector,3.7,1.0
+mytronlabs-000003-002.mp4,61.07,62.53,left,approach,orbital sander,detector,3.9,0.42
+mytronlabs-000003-002.mp4,62.53,62.83,left,grab,orbital sander,detector,3.9,0.42
+mytronlabs-000003-002.mp4,62.63,62.93,right,release,marker pen,detector,4,0.81
+mytronlabs-000003-002.mp4,62.83,63.43,left,hold,orbital sander,detector,3.9,0.42
+mytronlabs-000003-002.mp4,63.4,63.7,right,grab,marker pen,detector,3.9,0.93
+mytronlabs-000003-002.mp4,63.43,63.73,left,release,orbital sander,detector,3.9,0.42
+mytronlabs-000003-002.mp4,63.7,66.97,right,hold,marker pen,detector,3.9,0.93
+mytronlabs-000003-002.mp4,65.33,66.8,left,approach,marker pen,detector,4,0.12
+mytronlabs-000003-002.mp4,66.8,67.1,left,grab,marker pen,detector,4,0.12
+mytronlabs-000003-002.mp4,66.97,67.27,right,release,marker pen,detector,3.9,0.93
+mytronlabs-000003-002.mp4,67.1,67.5,left,hold,marker pen,detector,4,0.12
+mytronlabs-000003-002.mp4,67.5,67.8,left,release,marker pen,detector,4,0.12
+mytronlabs-000003-002.mp4,67.93,68.23,right,grab,marker pen,detector,3.4,0.68
+mytronlabs-000003-002.mp4,68.23,72.97,right,hold,marker pen,detector,3.4,0.68
+mytronlabs-000003-002.mp4,68.27,68.57,left,grab,orbital sander,detector,3.6,0.78
+mytronlabs-000003-002.mp4,68.57,79.97,left,hold,orbital sander,detector,3.6,0.78
+mytronlabs-000003-002.mp4,72.97,73.27,right,release,marker pen,detector,3.4,0.68
 mytronlabs-000003-002.mp4,75.27,76.73,right,approach,glove,detector,3.1,0.77
 mytronlabs-000003-002.mp4,76.73,77.03,right,grab,glove,detector,3.1,0.77
 mytronlabs-000003-002.mp4,77.03,78.43,right,hold,glove,detector,3.1,0.77
 mytronlabs-000003-002.mp4,78.43,78.73,right,release,glove,detector,3.1,0.77
-mytronlabs-000003-002.mp4,79.93,80.07,right,grab,glove,detector,3,0.43
-mytronlabs-000003-002.mp4,79.97,80.27,left,release,pliers,detector,3.6,0.67
-mytronlabs-000003-002.mp4,80.07,80.2,right,hold,glove,detector,3,0.43
-mytronlabs-000003-002.mp4,80.2,80.33,right,release,glove,detector,3,0.43
-mytronlabs-000003-002.mp4,80.33,80.67,left,approach,marker pen,detector,3.8,0.55
+mytronlabs-000003-002.mp4,79.93,80.07,right,grab,orbital sander,detector,3,0.57
+mytronlabs-000003-002.mp4,79.97,80.27,left,release,orbital sander,detector,3.6,0.78
+mytronlabs-000003-002.mp4,80.07,80.2,right,hold,orbital sander,detector,3,0.57
+mytronlabs-000003-002.mp4,80.2,80.33,right,release,orbital sander,detector,3,0.57
+mytronlabs-000003-002.mp4,80.4,80.67,left,approach,marker pen,detector,3.8,0.55
 mytronlabs-000003-002.mp4,80.67,80.97,left,grab,marker pen,detector,3.8,0.55
 mytronlabs-000003-002.mp4,80.97,81.77,left,hold,marker pen,detector,3.8,0.55
-mytronlabs-000003-002.mp4,81.4,81.7,right,grab,marker pen,detector,4,0.91
-mytronlabs-000003-002.mp4,81.7,88.57,right,hold,marker pen,detector,4,0.91
+mytronlabs-000003-002.mp4,81.4,81.7,right,grab,marker pen,detector,4,0.77
+mytronlabs-000003-002.mp4,81.7,88.57,right,hold,marker pen,detector,4,0.77
 mytronlabs-000003-002.mp4,81.77,82.07,left,release,marker pen,detector,3.8,0.55
-mytronlabs-000003-002.mp4,84.13,84.43,left,grab,marker pen,detector,3.9,0.88
-mytronlabs-000003-002.mp4,84.43,84.9,left,hold,marker pen,detector,3.9,0.88
-mytronlabs-000003-002.mp4,84.9,85.2,left,release,marker pen,detector,3.9,0.88
-mytronlabs-000003-002.mp4,86.4,86.6,left,grab,wooden plank,detector,3.3,1.0
-mytronlabs-000003-002.mp4,86.6,86.8,left,hold,wooden plank,detector,3.3,1.0
-mytronlabs-000003-002.mp4,86.8,87.0,left,release,wooden plank,detector,3.3,1.0
-mytronlabs-000003-002.mp4,87.07,88.13,left,approach,marker pen,detector,3.6,0.88
-mytronlabs-000003-002.mp4,88.13,88.43,left,grab,marker pen,detector,3.6,0.88
-mytronlabs-000003-002.mp4,88.43,90.57,left,hold,marker pen,detector,3.6,0.88
-mytronlabs-000003-002.mp4,88.57,88.87,right,release,marker pen,detector,4,0.91
-mytronlabs-000003-002.mp4,90.47,91.87,right,touching_fixed,glove,detector,3.7,0.55
-mytronlabs-000003-002.mp4,90.57,90.87,left,release,marker pen,detector,3.6,0.88
-mytronlabs-000003-002.mp4,91.47,91.62,left,grab,glove,detector,3,1.0
-mytronlabs-000003-002.mp4,91.62,91.78,left,hold,glove,detector,3,1.0
-mytronlabs-000003-002.mp4,91.78,91.93,left,release,glove,detector,3,1.0
-mytronlabs-000003-002.mp4,92.2,92.5,right,grab,marker pen,detector,4,0.95
-mytronlabs-000003-002.mp4,92.5,97.63,right,hold,marker pen,detector,4,0.95
-mytronlabs-000003-002.mp4,93.6,94.2,left,touching_fixed,table,detector,,
-mytronlabs-000003-002.mp4,94.73,96.2,left,approach,orbital sander,detector,3.9,1.0
-mytronlabs-000003-002.mp4,96.2,96.49,left,grab,orbital sander,detector,3.9,1.0
-mytronlabs-000003-002.mp4,96.49,96.78,left,hold,orbital sander,detector,3.9,1.0
-mytronlabs-000003-002.mp4,96.78,97.07,left,release,orbital sander,detector,3.9,1.0
-mytronlabs-000003-002.mp4,97.13,97.4,left,approach,glove,detector,4,0.92
-mytronlabs-000003-002.mp4,97.4,97.7,left,grab,glove,detector,4,0.92
-mytronlabs-000003-002.mp4,97.63,97.93,right,release,marker pen,detector,4,0.95
-mytronlabs-000003-002.mp4,97.7,99.57,left,hold,glove,detector,4,0.92
-mytronlabs-000003-002.mp4,98.6,98.8,right,grab,marker pen,detector,3.8,1.0
-mytronlabs-000003-002.mp4,98.8,99.0,right,hold,marker pen,detector,3.8,1.0
-mytronlabs-000003-002.mp4,99.0,99.2,right,release,marker pen,detector,3.8,1.0
-mytronlabs-000003-002.mp4,99.27,99.67,right,approach,wooden plank,detector,4,0.89
-mytronlabs-000003-002.mp4,99.57,99.87,left,release,glove,detector,4,0.92
-mytronlabs-000003-002.mp4,99.67,99.97,right,grab,wooden plank,detector,4,0.89
-mytronlabs-000003-002.mp4,99.97,100.5,right,hold,wooden plank,detector,4,0.89
-mytronlabs-000003-002.mp4,100.33,100.63,left,grab,timber,detector,4,0.88
-mytronlabs-000003-002.mp4,100.5,100.8,right,release,wooden plank,detector,4,0.89
-mytronlabs-000003-002.mp4,100.63,101.03,left,hold,timber,detector,4,0.88
-mytronlabs-000003-002.mp4,101.03,101.33,left,release,timber,detector,4,0.88
-mytronlabs-000003-002.mp4,103.53,103.83,left,grab,glue bottle,detector,4.0,0.51
-mytronlabs-000003-002.mp4,103.83,106.03,left,hold,glue bottle,detector,4.0,0.51
-mytronlabs-000003-002.mp4,106.03,106.33,left,release,glue bottle,detector,4.0,0.51
-mytronlabs-000003-002.mp4,107.33,107.63,left,grab,wooden plank,detector,3.6,0.8
-mytronlabs-000003-002.mp4,107.63,108.97,left,hold,wooden plank,detector,3.6,0.8
-mytronlabs-000003-002.mp4,108.67,108.97,right,grab,orbital sander,detector,3.7,0.73
-mytronlabs-000003-002.mp4,108.97,109.27,left,release,wooden plank,detector,3.6,0.8
-mytronlabs-000003-002.mp4,108.97,109.77,right,hold,orbital sander,detector,3.7,0.73
-mytronlabs-000003-002.mp4,109.33,109.6,left,approach,marker pen,detector,4,0.88
-mytronlabs-000003-002.mp4,109.6,109.9,left,grab,marker pen,detector,4,0.88
-mytronlabs-000003-002.mp4,109.77,110.07,right,release,orbital sander,detector,3.7,0.73
-mytronlabs-000003-002.mp4,109.9,111.5,left,hold,marker pen,detector,4,0.88
-mytronlabs-000003-002.mp4,111.5,111.8,left,release,marker pen,detector,4,0.88
-mytronlabs-000003-002.mp4,111.87,112.17,right,grab,wooden plank,detector,4,0.87
-mytronlabs-000003-002.mp4,112.17,113.57,right,hold,wooden plank,detector,4,0.87
-mytronlabs-000003-002.mp4,113.57,113.87,right,release,wooden plank,detector,4,0.87
-mytronlabs-000003-002.mp4,115.47,115.77,left,grab,marker pen,detector,4,0.92
-mytronlabs-000003-002.mp4,115.6,115.9,right,grab,marker pen,detector,4,1.0
-mytronlabs-000003-002.mp4,115.77,118.3,left,hold,marker pen,detector,4,0.92
-mytronlabs-000003-002.mp4,115.9,116.37,right,hold,marker pen,detector,4,1.0
-mytronlabs-000003-002.mp4,116.37,116.67,right,release,marker pen,detector,4,1.0
-mytronlabs-000003-002.mp4,117.4,117.51,right,grab,marker pen,detector,4,1.0
-mytronlabs-000003-002.mp4,117.51,117.62,right,hold,marker pen,detector,4,1.0
-mytronlabs-000003-002.mp4,117.62,117.73,right,release,marker pen,detector,4,1.0
-mytronlabs-000003-002.mp4,118.3,118.6,left,release,marker pen,detector,4,0.92
-mytronlabs-000003-002.mp4,118.33,118.63,right,grab,wooden plank,detector,4.0,0.77
-mytronlabs-000003-002.mp4,118.63,119.7,right,hold,wooden plank,detector,4.0,0.77
-mytronlabs-000003-002.mp4,118.67,119.6,left,approach,orbital sander,detector,3.8,0.82
-mytronlabs-000003-002.mp4,119.6,119.9,left,grab,orbital sander,detector,3.8,0.82
-mytronlabs-000003-002.mp4,119.7,120.0,right,release,wooden plank,detector,4.0,0.77
-mytronlabs-000003-002.mp4,119.9,136.97,left,hold,orbital sander,detector,3.8,0.82
-mytronlabs-000003-002.mp4,120.07,120.4,right,approach,orbital sander,detector,4.0,0.83
-mytronlabs-000003-002.mp4,120.4,120.7,right,grab,orbital sander,detector,4.0,0.83
-mytronlabs-000003-002.mp4,120.7,133.57,right,hold,orbital sander,detector,4.0,0.83
-mytronlabs-000003-002.mp4,133.57,133.87,right,release,orbital sander,detector,4.0,0.83
-mytronlabs-000003-002.mp4,136.97,137.27,left,release,orbital sander,detector,3.8,0.82
-mytronlabs-000003-002.mp4,139.67,141.13,left,approach,pliers,detector,3,0.5
-mytronlabs-000003-002.mp4,140.13,140.43,right,grab,marker pen,detector,3.9,0.79
-mytronlabs-000003-002.mp4,140.43,143.83,right,hold,marker pen,detector,3.9,0.79
-mytronlabs-000003-002.mp4,141.13,141.29,left,grab,pliers,detector,3,0.5
-mytronlabs-000003-002.mp4,141.29,141.44,left,hold,pliers,detector,3,0.5
-mytronlabs-000003-002.mp4,141.44,141.6,left,release,pliers,detector,3,0.5
-mytronlabs-000003-002.mp4,141.67,142.07,left,approach,pliers,detector,3.8,0.69
-mytronlabs-000003-002.mp4,142.07,142.37,left,grab,pliers,detector,3.8,0.69
-mytronlabs-000003-002.mp4,142.37,148.43,left,hold,pliers,detector,3.8,0.69
-mytronlabs-000003-002.mp4,143.83,144.13,right,release,marker pen,detector,3.9,0.79
-mytronlabs-000003-002.mp4,145.13,145.4,right,approach,marker pen,detector,4,0.85
-mytronlabs-000003-002.mp4,145.4,145.7,right,grab,marker pen,detector,4,0.85
-mytronlabs-000003-002.mp4,145.7,150.3,right,hold,marker pen,detector,4,0.85
-mytronlabs-000003-002.mp4,148.43,148.73,left,release,pliers,detector,3.8,0.69
-mytronlabs-000003-002.mp4,148.8,150.2,left,approach,glue bottle,detector,4.0,0.97
-mytronlabs-000003-002.mp4,150.2,150.5,left,grab,glue bottle,detector,4.0,0.97
-mytronlabs-000003-002.mp4,150.3,150.6,right,release,marker pen,detector,4,0.85
-mytronlabs-000003-002.mp4,150.5,151.77,left,hold,glue bottle,detector,4.0,0.97
-mytronlabs-000003-002.mp4,151.27,151.57,right,grab,marker pen,detector,3.9,0.84
-mytronlabs-000003-002.mp4,151.57,153.77,right,hold,marker pen,detector,3.9,0.84
-mytronlabs-000003-002.mp4,151.77,152.07,left,release,glue bottle,detector,4.0,0.97
-mytronlabs-000003-002.mp4,153.6,154.0,left,approach,orbital sander,detector,3.4,1.0
-mytronlabs-000003-002.mp4,153.77,154.07,right,release,marker pen,detector,3.9,0.84
-mytronlabs-000003-002.mp4,154.0,154.29,left,grab,orbital sander,detector,3.4,1.0
-mytronlabs-000003-002.mp4,154.29,154.58,left,hold,orbital sander,detector,3.4,1.0
-mytronlabs-000003-002.mp4,154.53,156.07,right,touching_fixed,wooden plank,detector,4.0,0.71
-mytronlabs-000003-002.mp4,154.58,154.87,left,release,orbital sander,detector,3.4,1.0
-mytronlabs-000003-002.mp4,154.93,155.2,left,approach,wooden piece,detector,3.9,0.69
-mytronlabs-000003-002.mp4,155.2,155.5,left,grab,wooden piece,detector,3.9,0.69
-mytronlabs-000003-002.mp4,155.5,155.9,left,hold,wooden piece,detector,3.9,0.69
-mytronlabs-000003-002.mp4,155.9,156.2,left,release,wooden piece,detector,3.9,0.69
-mytronlabs-000003-002.mp4,156.47,156.77,right,grab,marker pen,detector,3.4,0.74
-mytronlabs-000003-002.mp4,156.77,157.9,right,hold,marker pen,detector,3.4,0.74
-mytronlabs-000003-002.mp4,157.9,158.2,right,release,marker pen,detector,3.4,0.74
-mytronlabs-000003-002.mp4,158.13,158.43,left,grab,glove,detector,2.9,0.76
-mytronlabs-000003-002.mp4,158.43,161.37,left,hold,glove,detector,2.9,0.76
-mytronlabs-000003-002.mp4,159.2,159.5,right,grab,marker pen,detector,3.8,0.9
-mytronlabs-000003-002.mp4,159.5,166.7,right,hold,marker pen,detector,3.8,0.9
-mytronlabs-000003-002.mp4,161.37,161.67,left,release,glove,detector,2.9,0.76
-mytronlabs-000003-002.mp4,161.73,162.47,left,approach,marker pen,detector,4,0.96
-mytronlabs-000003-002.mp4,162.47,162.77,left,grab,marker pen,detector,4,0.96
-mytronlabs-000003-002.mp4,162.77,163.63,left,hold,marker pen,detector,4,0.96
-mytronlabs-000003-002.mp4,163.63,163.93,left,release,marker pen,detector,4,0.96
-mytronlabs-000003-002.mp4,166.6,166.9,left,grab,orbital sander,detector,3.8,0.67
-mytronlabs-000003-002.mp4,166.7,167.0,right,release,marker pen,detector,3.8,0.9
-mytronlabs-000003-002.mp4,166.9,167.83,left,hold,orbital sander,detector,3.8,0.67
-mytronlabs-000003-002.mp4,167.83,168.13,left,release,orbital sander,detector,3.8,0.67
-mytronlabs-000003-002.mp4,168.0,168.3,right,grab,marker pen,detector,4,0.88
-mytronlabs-000003-002.mp4,168.3,171.1,right,hold,marker pen,detector,4,0.88
-mytronlabs-000003-002.mp4,169.47,169.77,left,grab,wooden plank,detector,3.5,0.91
-mytronlabs-000003-002.mp4,169.77,172.1,left,hold,wooden plank,detector,3.5,0.91
-mytronlabs-000003-002.mp4,171.1,171.4,right,release,marker pen,detector,4,0.88
-mytronlabs-000003-002.mp4,172.1,172.4,left,release,wooden plank,detector,3.5,0.91
-mytronlabs-000003-002.mp4,172.67,172.97,right,grab,marker pen,detector,4,0.91
-mytronlabs-000003-002.mp4,172.97,174.63,right,hold,marker pen,detector,4,0.91
-mytronlabs-000003-002.mp4,174.63,174.93,right,release,marker pen,detector,4,0.91
-mytronlabs-000003-002.mp4,174.8,175.1,left,grab,marker pen,detector,3.9,0.81
-mytronlabs-000003-002.mp4,175.1,179.63,left,hold,marker pen,detector,3.9,0.81
-mytronlabs-000003-002.mp4,176.47,176.77,right,grab,marker pen,detector,4,0.77
-mytronlabs-000003-002.mp4,176.77,179.63,right,hold,marker pen,detector,4,0.77
-mytronlabs-000003-002.mp4,179.63,179.93,left,release,marker pen,detector,3.9,0.81
-mytronlabs-000003-002.mp4,179.63,179.93,right,release,marker pen,detector,4,0.77
+mytronlabs-000003-002.mp4,84.13,84.43,left,grab,marker pen,detector,3.9,0.53
+mytronlabs-000003-002.mp4,84.43,84.9,left,hold,marker pen,detector,3.9,0.53
+mytronlabs-000003-002.mp4,84.9,85.2,left,release,marker pen,detector,3.9,0.53
+mytronlabs-000003-002.mp4,86.4,87.0,left,touching_fixed,wooden plank,detector,3.3,1.0
+mytronlabs-000003-002.mp4,87.07,88.13,left,approach,marker pen,detector,3.6,0.76
+mytronlabs-000003-002.mp4,88.13,88.43,left,grab,marker pen,detector,3.6,0.76
+mytronlabs-000003-002.mp4,88.43,90.57,left,hold,marker pen,detector,3.6,0.76
+mytronlabs-000003-002.mp4,88.57,88.87,right,release,marker pen,detector,4,0.77
+mytronlabs-000003-002.mp4,90.47,90.77,right,grab,marker pen,detector,3.7,0.41
+mytronlabs-000003-002.mp4,90.57,90.87,left,release,marker pen,detector,3.6,0.76
+mytronlabs-000003-002.mp4,90.77,91.57,right,hold,marker pen,detector,3.7,0.41
+mytronlabs-000003-002.mp4,91.47,91.62,left,grab,marker pen,detector,3,0.25
+mytronlabs-000003-002.mp4,91.57,91.87,right,release,marker pen,detector,3.7,0.41
+mytronlabs-000003-002.mp4,91.62,91.78,left,hold,marker pen,detector,3,0.25
+mytronlabs-000003-002.mp4,91.78,91.93,left,release,marker pen,detector,3,0.25
+mytronlabs-000003-002.mp4,92.2,92.5,right,grab,marker pen,detector,4,0.8
+mytronlabs-000003-002.mp4,92.5,97.63,right,hold,marker pen,detector,4,0.8
+mytronlabs-000003-002.mp4,94.73,96.2,left,approach,marker pen,detector,3.9,1.0
+mytronlabs-000003-002.mp4,96.2,96.49,left,grab,marker pen,detector,3.9,1.0
+mytronlabs-000003-002.mp4,96.49,96.78,left,hold,marker pen,detector,3.9,1.0
+mytronlabs-000003-002.mp4,96.78,97.07,left,release,marker pen,detector,3.9,1.0
+mytronlabs-000003-002.mp4,97.13,97.4,left,approach,marker pen,detector,4,0.68
+mytronlabs-000003-002.mp4,97.4,97.7,left,grab,marker pen,detector,4,0.68
+mytronlabs-000003-002.mp4,97.63,97.93,right,release,marker pen,detector,4,0.8
+mytronlabs-000003-002.mp4,97.7,99.57,left,hold,marker pen,detector,4,0.68
+mytronlabs-000003-002.mp4,98.6,98.8,right,grab,marker pen,detector,3.8,0.9
+mytronlabs-000003-002.mp4,98.8,99.0,right,hold,marker pen,detector,3.8,0.9
+mytronlabs-000003-002.mp4,99.0,99.2,right,release,marker pen,detector,3.8,0.9
+mytronlabs-000003-002.mp4,99.27,99.67,right,approach,orbital sander,detector,4,0.28
+mytronlabs-000003-002.mp4,99.57,99.87,left,release,marker pen,detector,4,0.68
+mytronlabs-000003-002.mp4,99.67,99.97,right,grab,orbital sander,detector,4,0.28
+mytronlabs-000003-002.mp4,99.97,100.5,right,hold,orbital sander,detector,4,0.28
+mytronlabs-000003-002.mp4,100.33,100.63,left,grab,wooden plank,detector,4,0.81
+mytronlabs-000003-002.mp4,100.5,100.8,right,release,orbital sander,detector,4,0.28
+mytronlabs-000003-002.mp4,100.63,101.03,left,hold,wooden plank,detector,4,0.81
+mytronlabs-000003-002.mp4,101.03,101.33,left,release,wooden plank,detector,4,0.81
+mytronlabs-000003-002.mp4,103.53,103.83,left,grab,orbital sander,detector,4.0,0.74
+mytronlabs-000003-002.mp4,103.83,106.03,left,hold,orbital sander,detector,4.0,0.74
+mytronlabs-000003-002.mp4,106.03,106.33,left,release,orbital sander,detector,4.0,0.74
+mytronlabs-000003-002.mp4,107.33,107.63,left,grab,marker pen,detector,3.6,1.0
+mytronlabs-000003-002.mp4,107.63,108.97,left,hold,marker pen,detector,3.6,1.0
+mytronlabs-000003-002.mp4,108.67,108.97,right,grab,marker pen,detector,3.7,0.77
+mytronlabs-000003-002.mp4,108.97,109.27,left,release,marker pen,detector,3.6,1.0
+mytronlabs-000003-002.mp4,108.97,109.77,right,hold,marker pen,detector,3.7,0.77
+mytronlabs-000003-002.mp4,109.33,109.6,left,approach,marker pen,detector,4,0.56
+mytronlabs-000003-002.mp4,109.6,109.9,left,grab,marker pen,detector,4,0.56
+mytronlabs-000003-002.mp4,109.77,110.07,right,release,marker pen,detector,3.7,0.77
+mytronlabs-000003-002.mp4,109.9,111.5,left,hold,marker pen,detector,4,0.56
+mytronlabs-000003-002.mp4,111.5,111.8,left,release,marker pen,detector,4,0.56
+mytronlabs-000003-002.mp4,111.87,112.17,right,grab,wooden plank,detector,4,0.68
+mytronlabs-000003-002.mp4,112.17,113.57,right,hold,wooden plank,detector,4,0.68
+mytronlabs-000003-002.mp4,113.57,113.87,right,release,wooden plank,detector,4,0.68
+mytronlabs-000003-002.mp4,115.47,115.77,left,grab,marker pen,detector,4,0.62
+mytronlabs-000003-002.mp4,115.6,115.9,right,grab,marker pen,detector,4,0.59
+mytronlabs-000003-002.mp4,115.77,118.3,left,hold,marker pen,detector,4,0.62
+mytronlabs-000003-002.mp4,115.9,116.37,right,hold,marker pen,detector,4,0.59
+mytronlabs-000003-002.mp4,116.37,116.67,right,release,marker pen,detector,4,0.59
+mytronlabs-000003-002.mp4,117.4,117.51,right,grab,marker pen,detector,4,0.67
+mytronlabs-000003-002.mp4,117.51,117.62,right,hold,marker pen,detector,4,0.67
+mytronlabs-000003-002.mp4,117.62,117.73,right,release,marker pen,detector,4,0.67
+mytronlabs-000003-002.mp4,118.3,118.6,left,release,marker pen,detector,4,0.62
+mytronlabs-000003-002.mp4,118.33,118.63,right,grab,wooden plank,detector,4.0,0.54
+mytronlabs-000003-002.mp4,118.63,119.7,right,hold,wooden plank,detector,4.0,0.54
+mytronlabs-000003-002.mp4,118.67,119.6,left,approach,marker pen,detector,3.8,0.65
+mytronlabs-000003-002.mp4,119.6,119.9,left,grab,marker pen,detector,3.8,0.65
+mytronlabs-000003-002.mp4,119.7,120.0,right,release,wooden plank,detector,4.0,0.54
+mytronlabs-000003-002.mp4,119.9,136.97,left,hold,marker pen,detector,3.8,0.65
+mytronlabs-000003-002.mp4,120.4,120.7,right,grab,marker pen,detector,4.0,0.81
+mytronlabs-000003-002.mp4,120.7,133.57,right,hold,marker pen,detector,4.0,0.81
+mytronlabs-000003-002.mp4,133.57,133.87,right,release,marker pen,detector,4.0,0.81
+mytronlabs-000003-002.mp4,136.97,137.27,left,release,marker pen,detector,3.8,0.65
+mytronlabs-000003-002.mp4,139.67,141.13,left,approach,marker pen,detector,3,0.38
+mytronlabs-000003-002.mp4,140.13,140.43,right,grab,marker pen,detector,3.9,0.56
+mytronlabs-000003-002.mp4,140.43,143.83,right,hold,marker pen,detector,3.9,0.56
+mytronlabs-000003-002.mp4,141.13,141.29,left,grab,marker pen,detector,3,0.38
+mytronlabs-000003-002.mp4,141.29,141.44,left,hold,marker pen,detector,3,0.38
+mytronlabs-000003-002.mp4,141.44,141.6,left,release,marker pen,detector,3,0.38
+mytronlabs-000003-002.mp4,141.67,142.07,left,approach,marker pen,detector,3.8,0.43
+mytronlabs-000003-002.mp4,142.07,142.37,left,grab,marker pen,detector,3.8,0.43
+mytronlabs-000003-002.mp4,142.37,148.43,left,hold,marker pen,detector,3.8,0.43
+mytronlabs-000003-002.mp4,143.83,144.13,right,release,marker pen,detector,3.9,0.56
+mytronlabs-000003-002.mp4,145.13,145.4,right,approach,marker pen,detector,4,0.8
+mytronlabs-000003-002.mp4,145.4,145.7,right,grab,marker pen,detector,4,0.8
+mytronlabs-000003-002.mp4,145.7,150.3,right,hold,marker pen,detector,4,0.8
+mytronlabs-000003-002.mp4,148.43,148.73,left,release,marker pen,detector,3.8,0.43
+mytronlabs-000003-002.mp4,149.07,150.2,left,approach,marker pen,detector,4.0,0.48
+mytronlabs-000003-002.mp4,150.2,150.5,left,grab,marker pen,detector,4.0,0.48
+mytronlabs-000003-002.mp4,150.3,150.6,right,release,marker pen,detector,4,0.8
+mytronlabs-000003-002.mp4,150.5,151.77,left,hold,marker pen,detector,4.0,0.48
+mytronlabs-000003-002.mp4,151.27,151.57,right,grab,marker pen,detector,3.9,0.72
+mytronlabs-000003-002.mp4,151.57,153.77,right,hold,marker pen,detector,3.9,0.72
+mytronlabs-000003-002.mp4,151.77,152.07,left,release,marker pen,detector,4.0,0.48
+mytronlabs-000003-002.mp4,153.6,154.0,left,approach,marker pen,detector,3.4,0.21
+mytronlabs-000003-002.mp4,153.77,154.07,right,release,marker pen,detector,3.9,0.72
+mytronlabs-000003-002.mp4,154.0,154.29,left,grab,marker pen,detector,3.4,0.21
+mytronlabs-000003-002.mp4,154.29,154.58,left,hold,marker pen,detector,3.4,0.21
+mytronlabs-000003-002.mp4,154.53,154.83,right,grab,wooden plank,detector,4.0,0.46
+mytronlabs-000003-002.mp4,154.58,154.87,left,release,marker pen,detector,3.4,0.21
+mytronlabs-000003-002.mp4,154.83,155.77,right,hold,wooden plank,detector,4.0,0.46
+mytronlabs-000003-002.mp4,154.93,155.2,left,approach,wooden plank,detector,3.9,0.75
+mytronlabs-000003-002.mp4,155.2,155.5,left,grab,wooden plank,detector,3.9,0.75
+mytronlabs-000003-002.mp4,155.5,155.9,left,hold,wooden plank,detector,3.9,0.75
+mytronlabs-000003-002.mp4,155.77,156.07,right,release,wooden plank,detector,4.0,0.46
+mytronlabs-000003-002.mp4,155.9,156.2,left,release,wooden plank,detector,3.9,0.75
+mytronlabs-000003-002.mp4,156.13,156.47,right,approach,wooden plank,detector,3.4,0.89
+mytronlabs-000003-002.mp4,156.47,156.77,right,grab,wooden plank,detector,3.4,0.89
+mytronlabs-000003-002.mp4,156.77,157.9,right,hold,wooden plank,detector,3.4,0.89
+mytronlabs-000003-002.mp4,157.8,158.13,left,approach,marker pen,detector,2.9,0.44
+mytronlabs-000003-002.mp4,157.9,158.2,right,release,wooden plank,detector,3.4,0.89
+mytronlabs-000003-002.mp4,158.13,158.43,left,grab,marker pen,detector,2.9,0.44
+mytronlabs-000003-002.mp4,158.43,161.37,left,hold,marker pen,detector,2.9,0.44
+mytronlabs-000003-002.mp4,159.2,159.5,right,grab,marker pen,detector,3.8,0.81
+mytronlabs-000003-002.mp4,159.5,166.7,right,hold,marker pen,detector,3.8,0.81
+mytronlabs-000003-002.mp4,161.37,161.67,left,release,marker pen,detector,2.9,0.44
+mytronlabs-000003-002.mp4,161.73,162.47,left,approach,marker pen,detector,4,0.65
+mytronlabs-000003-002.mp4,162.47,162.77,left,grab,marker pen,detector,4,0.65
+mytronlabs-000003-002.mp4,162.77,163.63,left,hold,marker pen,detector,4,0.65
+mytronlabs-000003-002.mp4,163.63,163.93,left,release,marker pen,detector,4,0.65
+mytronlabs-000003-002.mp4,166.6,166.9,left,grab,marker pen,detector,3.8,0.38
+mytronlabs-000003-002.mp4,166.7,167.0,right,release,marker pen,detector,3.8,0.81
+mytronlabs-000003-002.mp4,166.9,167.83,left,hold,marker pen,detector,3.8,0.38
+mytronlabs-000003-002.mp4,167.83,168.13,left,release,marker pen,detector,3.8,0.38
+mytronlabs-000003-002.mp4,168.0,168.3,right,grab,marker pen,detector,4,0.63
+mytronlabs-000003-002.mp4,168.3,171.1,right,hold,marker pen,detector,4,0.63
+mytronlabs-000003-002.mp4,169.47,169.77,left,grab,marker pen,detector,3.5,0.8
+mytronlabs-000003-002.mp4,169.77,172.1,left,hold,marker pen,detector,3.5,0.8
+mytronlabs-000003-002.mp4,171.1,171.4,right,release,marker pen,detector,4,0.63
+mytronlabs-000003-002.mp4,172.1,172.4,left,release,marker pen,detector,3.5,0.8
+mytronlabs-000003-002.mp4,172.67,172.97,right,grab,marker pen,detector,4,0.63
+mytronlabs-000003-002.mp4,172.97,174.63,right,hold,marker pen,detector,4,0.63
+mytronlabs-000003-002.mp4,174.63,174.93,right,release,marker pen,detector,4,0.63
+mytronlabs-000003-002.mp4,174.8,175.1,left,grab,marker pen,detector,3.9,0.47
+mytronlabs-000003-002.mp4,175.1,179.63,left,hold,marker pen,detector,3.9,0.47
+mytronlabs-000003-002.mp4,176.47,176.77,right,grab,marker pen,detector,4,0.66
+mytronlabs-000003-002.mp4,176.77,179.63,right,hold,marker pen,detector,4,0.66
+mytronlabs-000003-002.mp4,179.63,179.93,left,release,marker pen,detector,3.9,0.47
+mytronlabs-000003-002.mp4,179.63,179.93,right,release,marker pen,detector,4,0.66

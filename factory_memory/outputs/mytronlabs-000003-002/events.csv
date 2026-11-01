@@ -2,254 +2,249 @@ event_id,timestamp_start,timestamp_end,hand,object,event,confidence,confidence_l
 evt_001,0.0,0.18,right,marker pen,possible_pickup,0.98,High,detector,mytronlabs-000003-002.mp4
 evt_002,0.18,0.36,right,marker pen,hold,0.98,High,detector,mytronlabs-000003-002.mp4
 evt_003,0.36,0.53,right,marker pen,possible_release,0.98,High,detector,mytronlabs-000003-002.mp4
-evt_004,0.6,0.73,left,wooden plank,possible_pickup,0.86,High,detector,mytronlabs-000003-002.mp4
-evt_005,0.73,0.87,left,wooden plank,hold,0.86,High,detector,mytronlabs-000003-002.mp4
-evt_006,0.87,1.0,left,wooden plank,possible_release,0.86,High,detector,mytronlabs-000003-002.mp4
-evt_007,1.33,1.63,right,paint can,possible_pickup,0.92,High,detector,mytronlabs-000003-002.mp4
-evt_008,1.63,2.63,right,paint can,hold,0.92,High,detector,mytronlabs-000003-002.mp4
-evt_009,1.73,2.2,left,angle grinder,approach,0.98,High,detector,mytronlabs-000003-002.mp4
-evt_010,2.2,2.5,left,angle grinder,possible_pickup,0.98,High,detector,mytronlabs-000003-002.mp4
-evt_011,2.5,4.83,left,angle grinder,hold,0.98,High,detector,mytronlabs-000003-002.mp4
-evt_012,2.63,2.93,right,paint can,possible_release,0.92,High,detector,mytronlabs-000003-002.mp4
-evt_013,3.4,3.62,right,marker pen,possible_pickup,0.82,High,detector,mytronlabs-000003-002.mp4
-evt_014,3.62,3.84,right,marker pen,hold,0.82,High,detector,mytronlabs-000003-002.mp4
-evt_015,3.84,4.07,right,marker pen,possible_release,0.82,High,detector,mytronlabs-000003-002.mp4
-evt_016,4.83,5.13,left,angle grinder,possible_release,0.98,High,detector,mytronlabs-000003-002.mp4
-evt_017,5.2,5.87,left,glove,approach,0.72,Medium,detector,mytronlabs-000003-002.mp4
-evt_018,5.87,6.17,left,glove,possible_pickup,0.72,Medium,detector,mytronlabs-000003-002.mp4
-evt_019,6.17,13.1,left,glove,hold,0.72,Medium,detector,mytronlabs-000003-002.mp4
-evt_020,8.07,8.37,right,marker pen,possible_pickup,0.88,High,detector,mytronlabs-000003-002.mp4
-evt_021,8.37,9.3,right,marker pen,hold,0.88,High,detector,mytronlabs-000003-002.mp4
-evt_022,9.3,9.6,right,marker pen,possible_release,0.88,High,detector,mytronlabs-000003-002.mp4
-evt_023,10.8,11.1,right,glove,possible_pickup,0.98,High,detector,mytronlabs-000003-002.mp4
-evt_024,11.1,11.43,right,glove,hold,0.98,High,detector,mytronlabs-000003-002.mp4
-evt_025,11.43,11.73,right,glove,possible_release,0.98,High,detector,mytronlabs-000003-002.mp4
-evt_026,13.1,13.4,left,glove,possible_release,0.72,Medium,detector,mytronlabs-000003-002.mp4
-evt_027,13.2,13.5,right,marker pen,possible_pickup,0.77,Medium,detector,mytronlabs-000003-002.mp4
-evt_028,13.5,14.57,right,marker pen,hold,0.77,Medium,detector,mytronlabs-000003-002.mp4
-evt_029,13.93,14.23,left,pliers,possible_pickup,0.83,High,detector,mytronlabs-000003-002.mp4
-evt_030,14.23,15.9,left,pliers,hold,0.83,High,detector,mytronlabs-000003-002.mp4
-evt_031,14.57,14.87,right,marker pen,possible_release,0.77,Medium,detector,mytronlabs-000003-002.mp4
-evt_032,15.9,16.2,left,pliers,possible_release,0.83,High,detector,mytronlabs-000003-002.mp4
-evt_033,17.0,17.3,left,wooden plank,possible_pickup,0.91,High,detector,mytronlabs-000003-002.mp4
-evt_034,17.2,17.5,right,angle grinder,possible_pickup,0.81,High,detector,mytronlabs-000003-002.mp4
-evt_035,17.3,18.77,left,wooden plank,hold,0.91,High,detector,mytronlabs-000003-002.mp4
-evt_036,17.5,17.9,right,angle grinder,hold,0.81,High,detector,mytronlabs-000003-002.mp4
-evt_037,17.9,18.2,right,angle grinder,possible_release,0.81,High,detector,mytronlabs-000003-002.mp4
-evt_038,18.6,18.9,right,marker pen,possible_pickup,0.98,High,detector,mytronlabs-000003-002.mp4
-evt_039,18.77,19.07,left,wooden plank,possible_release,0.91,High,detector,mytronlabs-000003-002.mp4
-evt_040,18.9,20.17,right,marker pen,hold,0.98,High,detector,mytronlabs-000003-002.mp4
+evt_004,0.6,0.73,left,wooden plank,possible_pickup,0.43,Low,detector,mytronlabs-000003-002.mp4
+evt_005,0.73,0.87,left,wooden plank,hold,0.43,Low,detector,mytronlabs-000003-002.mp4
+evt_006,0.87,1.0,left,wooden plank,possible_release,0.43,Low,detector,mytronlabs-000003-002.mp4
+evt_007,1.33,1.63,right,marker pen,possible_pickup,0.68,Medium,detector,mytronlabs-000003-002.mp4
+evt_008,1.63,2.63,right,marker pen,hold,0.68,Medium,detector,mytronlabs-000003-002.mp4
+evt_009,1.73,2.2,left,angle grinder,approach,0.53,Low,detector,mytronlabs-000003-002.mp4
+evt_010,2.2,2.5,left,angle grinder,possible_pickup,0.53,Low,detector,mytronlabs-000003-002.mp4
+evt_011,2.5,4.83,left,angle grinder,hold,0.53,Low,detector,mytronlabs-000003-002.mp4
+evt_012,2.63,2.93,right,marker pen,possible_release,0.68,Medium,detector,mytronlabs-000003-002.mp4
+evt_013,3.4,3.62,right,marker pen,possible_pickup,0.4,Low,detector,mytronlabs-000003-002.mp4
+evt_014,3.62,3.84,right,marker pen,hold,0.4,Low,detector,mytronlabs-000003-002.mp4
+evt_015,3.84,4.07,right,marker pen,possible_release,0.4,Low,detector,mytronlabs-000003-002.mp4
+evt_016,4.83,5.13,left,angle grinder,possible_release,0.53,Low,detector,mytronlabs-000003-002.mp4
+evt_017,5.33,5.87,left,orbital sander,approach,0.57,Medium,detector,mytronlabs-000003-002.mp4
+evt_018,5.87,6.17,left,orbital sander,possible_pickup,0.57,Medium,detector,mytronlabs-000003-002.mp4
+evt_019,6.17,13.1,left,orbital sander,hold,0.57,Medium,detector,mytronlabs-000003-002.mp4
+evt_020,8.07,8.37,right,marker pen,possible_pickup,0.79,Medium,detector,mytronlabs-000003-002.mp4
+evt_021,8.37,9.3,right,marker pen,hold,0.79,Medium,detector,mytronlabs-000003-002.mp4
+evt_022,9.3,9.6,right,marker pen,possible_release,0.79,Medium,detector,mytronlabs-000003-002.mp4
+evt_023,10.8,11.1,right,glove,possible_pickup,0.4,Low,detector,mytronlabs-000003-002.mp4
+evt_024,11.1,11.43,right,glove,hold,0.4,Low,detector,mytronlabs-000003-002.mp4
+evt_025,11.43,11.73,right,glove,possible_release,0.4,Low,detector,mytronlabs-000003-002.mp4
+evt_026,13.1,13.4,left,orbital sander,possible_release,0.57,Medium,detector,mytronlabs-000003-002.mp4
+evt_027,13.2,13.5,right,marker pen,possible_pickup,0.69,Medium,detector,mytronlabs-000003-002.mp4
+evt_028,13.5,14.57,right,marker pen,hold,0.69,Medium,detector,mytronlabs-000003-002.mp4
+evt_029,13.93,14.23,left,orbital sander,possible_pickup,0.4,Low,detector,mytronlabs-000003-002.mp4
+evt_030,14.23,15.9,left,orbital sander,hold,0.4,Low,detector,mytronlabs-000003-002.mp4
+evt_031,14.57,14.87,right,marker pen,possible_release,0.69,Medium,detector,mytronlabs-000003-002.mp4
+evt_032,15.9,16.2,left,orbital sander,possible_release,0.4,Low,detector,mytronlabs-000003-002.mp4
+evt_033,17.0,17.3,left,marker pen,possible_pickup,0.62,Medium,detector,mytronlabs-000003-002.mp4
+evt_034,17.2,17.5,right,marker pen,possible_pickup,0.44,Low,detector,mytronlabs-000003-002.mp4
+evt_035,17.3,18.77,left,marker pen,hold,0.62,Medium,detector,mytronlabs-000003-002.mp4
+evt_036,17.5,17.9,right,marker pen,hold,0.44,Low,detector,mytronlabs-000003-002.mp4
+evt_037,17.9,18.2,right,marker pen,possible_release,0.44,Low,detector,mytronlabs-000003-002.mp4
+evt_038,18.6,18.9,right,marker pen,possible_pickup,0.9,High,detector,mytronlabs-000003-002.mp4
+evt_039,18.77,19.07,left,marker pen,possible_release,0.62,Medium,detector,mytronlabs-000003-002.mp4
+evt_040,18.9,20.17,right,marker pen,hold,0.9,High,detector,mytronlabs-000003-002.mp4
 evt_041,19.13,19.47,left,wooden plank,approach,0.98,High,detector,mytronlabs-000003-002.mp4
 evt_042,19.47,19.62,left,wooden plank,possible_pickup,0.98,High,detector,mytronlabs-000003-002.mp4
 evt_043,19.62,19.78,left,wooden plank,hold,0.98,High,detector,mytronlabs-000003-002.mp4
 evt_044,19.78,19.93,left,wooden plank,possible_release,0.98,High,detector,mytronlabs-000003-002.mp4
-evt_045,20.0,20.33,left,glove,approach,0.64,Medium,detector,mytronlabs-000003-002.mp4
-evt_046,20.17,20.47,right,marker pen,possible_release,0.98,High,detector,mytronlabs-000003-002.mp4
-evt_047,20.33,20.63,left,glove,possible_pickup,0.64,Medium,detector,mytronlabs-000003-002.mp4
-evt_048,20.63,21.83,left,glove,hold,0.64,Medium,detector,mytronlabs-000003-002.mp4
-evt_049,21.67,21.93,right,glove,possible_pickup,0.4,Low,detector,mytronlabs-000003-002.mp4
-evt_050,21.83,22.13,left,glove,possible_release,0.64,Medium,detector,mytronlabs-000003-002.mp4
-evt_051,21.93,22.2,right,glove,hold,0.4,Low,detector,mytronlabs-000003-002.mp4
-evt_052,22.2,22.47,right,glove,possible_release,0.4,Low,detector,mytronlabs-000003-002.mp4
-evt_053,22.87,23.17,left,glove,possible_pickup,0.92,High,detector,mytronlabs-000003-002.mp4
-evt_054,23.13,23.43,right,marker pen,possible_pickup,0.84,High,detector,mytronlabs-000003-002.mp4
-evt_055,23.17,28.3,left,glove,hold,0.92,High,detector,mytronlabs-000003-002.mp4
-evt_056,23.43,33.17,right,marker pen,hold,0.84,High,detector,mytronlabs-000003-002.mp4
-evt_057,28.3,28.6,left,glove,possible_release,0.92,High,detector,mytronlabs-000003-002.mp4
-evt_058,30.6,30.9,left,marker pen,possible_pickup,0.73,Medium,detector,mytronlabs-000003-002.mp4
-evt_059,30.9,45.23,left,marker pen,hold,0.73,Medium,detector,mytronlabs-000003-002.mp4
-evt_060,33.17,33.47,right,marker pen,possible_release,0.84,High,detector,mytronlabs-000003-002.mp4
-evt_061,36.67,36.82,right,orbital sander,possible_pickup,0.4,Low,detector,mytronlabs-000003-002.mp4
-evt_062,36.82,36.98,right,orbital sander,hold,0.4,Low,detector,mytronlabs-000003-002.mp4
-evt_063,36.98,37.13,right,orbital sander,possible_release,0.4,Low,detector,mytronlabs-000003-002.mp4
-evt_064,44.87,45.17,right,marker pen,possible_pickup,0.94,High,detector,mytronlabs-000003-002.mp4
-evt_065,45.17,45.63,right,marker pen,hold,0.94,High,detector,mytronlabs-000003-002.mp4
-evt_066,45.23,45.53,left,marker pen,possible_release,0.73,Medium,detector,mytronlabs-000003-002.mp4
-evt_067,45.63,45.93,right,marker pen,possible_release,0.94,High,detector,mytronlabs-000003-002.mp4
-evt_068,46.0,46.93,left,angle grinder,contact,0.4,Low,detector,mytronlabs-000003-002.mp4
-evt_069,47.2,47.87,right,wooden plank,approach,0.57,Medium,detector,mytronlabs-000003-002.mp4
-evt_070,47.87,48.0,right,wooden plank,possible_pickup,0.57,Medium,detector,mytronlabs-000003-002.mp4
-evt_071,48.0,48.13,right,wooden plank,hold,0.57,Medium,detector,mytronlabs-000003-002.mp4
-evt_072,48.13,48.27,right,wooden plank,possible_release,0.57,Medium,detector,mytronlabs-000003-002.mp4
-evt_073,49.13,49.43,right,marker pen,possible_pickup,0.81,High,detector,mytronlabs-000003-002.mp4
-evt_074,49.27,49.57,left,pliers,possible_pickup,0.76,Medium,detector,mytronlabs-000003-002.mp4
-evt_075,49.43,57.97,right,marker pen,hold,0.81,High,detector,mytronlabs-000003-002.mp4
-evt_076,49.57,56.17,left,pliers,hold,0.76,Medium,detector,mytronlabs-000003-002.mp4
-evt_077,56.17,56.47,left,pliers,possible_release,0.76,Medium,detector,mytronlabs-000003-002.mp4
-evt_078,57.73,58.03,left,orbital sander,possible_pickup,0.62,Medium,detector,mytronlabs-000003-002.mp4
-evt_079,57.97,58.27,right,marker pen,possible_release,0.81,High,detector,mytronlabs-000003-002.mp4
-evt_080,58.03,58.97,left,orbital sander,hold,0.62,Medium,detector,mytronlabs-000003-002.mp4
-evt_081,58.97,59.27,left,orbital sander,possible_release,0.62,Medium,detector,mytronlabs-000003-002.mp4
-evt_082,59.13,59.43,right,wooden plank,possible_pickup,0.95,High,detector,mytronlabs-000003-002.mp4
-evt_083,59.43,62.63,right,wooden plank,hold,0.95,High,detector,mytronlabs-000003-002.mp4
-evt_084,59.8,60.09,left,wooden plank,possible_pickup,0.98,High,detector,mytronlabs-000003-002.mp4
-evt_085,60.09,60.38,left,wooden plank,hold,0.98,High,detector,mytronlabs-000003-002.mp4
-evt_086,60.38,60.67,left,wooden plank,possible_release,0.98,High,detector,mytronlabs-000003-002.mp4
-evt_087,61.07,62.53,left,glove,approach,0.63,Medium,detector,mytronlabs-000003-002.mp4
-evt_088,62.53,62.83,left,glove,possible_pickup,0.63,Medium,detector,mytronlabs-000003-002.mp4
-evt_089,62.63,62.93,right,wooden plank,possible_release,0.95,High,detector,mytronlabs-000003-002.mp4
-evt_090,62.83,63.43,left,glove,hold,0.63,Medium,detector,mytronlabs-000003-002.mp4
-evt_091,63.0,63.4,right,orbital sander,approach,0.98,High,detector,mytronlabs-000003-002.mp4
-evt_092,63.4,63.7,right,orbital sander,possible_pickup,0.98,High,detector,mytronlabs-000003-002.mp4
-evt_093,63.43,63.73,left,glove,possible_release,0.63,Medium,detector,mytronlabs-000003-002.mp4
-evt_094,63.7,66.97,right,orbital sander,hold,0.98,High,detector,mytronlabs-000003-002.mp4
-evt_095,65.33,66.8,left,orbital sander,approach,0.62,Medium,detector,mytronlabs-000003-002.mp4
-evt_096,66.8,67.1,left,orbital sander,possible_pickup,0.62,Medium,detector,mytronlabs-000003-002.mp4
-evt_097,66.97,67.27,right,orbital sander,possible_release,0.98,High,detector,mytronlabs-000003-002.mp4
-evt_098,67.1,67.5,left,orbital sander,hold,0.62,Medium,detector,mytronlabs-000003-002.mp4
-evt_099,67.5,67.8,left,orbital sander,possible_release,0.62,Medium,detector,mytronlabs-000003-002.mp4
-evt_100,67.93,68.23,right,marker pen,possible_pickup,0.56,Medium,detector,mytronlabs-000003-002.mp4
-evt_101,68.23,72.97,right,marker pen,hold,0.56,Medium,detector,mytronlabs-000003-002.mp4
-evt_102,68.27,68.57,left,pliers,possible_pickup,0.67,Medium,detector,mytronlabs-000003-002.mp4
-evt_103,68.57,79.97,left,pliers,hold,0.67,Medium,detector,mytronlabs-000003-002.mp4
-evt_104,72.97,73.27,right,marker pen,possible_release,0.56,Medium,detector,mytronlabs-000003-002.mp4
-evt_105,73.33,73.93,right,table,contact,0.75,Medium,detector,mytronlabs-000003-002.mp4
-evt_106,75.27,76.73,right,glove,approach,0.77,Medium,detector,mytronlabs-000003-002.mp4
-evt_107,76.73,77.03,right,glove,possible_pickup,0.77,Medium,detector,mytronlabs-000003-002.mp4
-evt_108,77.03,78.43,right,glove,hold,0.77,Medium,detector,mytronlabs-000003-002.mp4
-evt_109,78.43,78.73,right,glove,possible_release,0.77,Medium,detector,mytronlabs-000003-002.mp4
-evt_110,79.93,80.07,right,glove,possible_pickup,0.43,Low,detector,mytronlabs-000003-002.mp4
-evt_111,79.97,80.27,left,pliers,possible_release,0.67,Medium,detector,mytronlabs-000003-002.mp4
-evt_112,80.07,80.2,right,glove,hold,0.43,Low,detector,mytronlabs-000003-002.mp4
-evt_113,80.2,80.33,right,glove,possible_release,0.43,Low,detector,mytronlabs-000003-002.mp4
-evt_114,80.33,80.67,left,marker pen,approach,0.55,Medium,detector,mytronlabs-000003-002.mp4
-evt_115,80.67,80.97,left,marker pen,possible_pickup,0.55,Medium,detector,mytronlabs-000003-002.mp4
-evt_116,80.97,81.77,left,marker pen,hold,0.55,Medium,detector,mytronlabs-000003-002.mp4
-evt_117,81.4,81.7,right,marker pen,possible_pickup,0.91,High,detector,mytronlabs-000003-002.mp4
-evt_118,81.7,88.57,right,marker pen,hold,0.91,High,detector,mytronlabs-000003-002.mp4
-evt_119,81.77,82.07,left,marker pen,possible_release,0.55,Medium,detector,mytronlabs-000003-002.mp4
-evt_120,84.13,84.43,left,marker pen,possible_pickup,0.88,High,detector,mytronlabs-000003-002.mp4
-evt_121,84.43,84.9,left,marker pen,hold,0.88,High,detector,mytronlabs-000003-002.mp4
-evt_122,84.9,85.2,left,marker pen,possible_release,0.88,High,detector,mytronlabs-000003-002.mp4
-evt_123,86.4,86.6,left,wooden plank,possible_pickup,0.98,High,detector,mytronlabs-000003-002.mp4
-evt_124,86.6,86.8,left,wooden plank,hold,0.98,High,detector,mytronlabs-000003-002.mp4
-evt_125,86.8,87.0,left,wooden plank,possible_release,0.98,High,detector,mytronlabs-000003-002.mp4
-evt_126,87.07,88.13,left,marker pen,approach,0.88,High,detector,mytronlabs-000003-002.mp4
-evt_127,88.13,88.43,left,marker pen,possible_pickup,0.88,High,detector,mytronlabs-000003-002.mp4
-evt_128,88.43,90.57,left,marker pen,hold,0.88,High,detector,mytronlabs-000003-002.mp4
-evt_129,88.57,88.87,right,marker pen,possible_release,0.91,High,detector,mytronlabs-000003-002.mp4
-evt_130,90.47,91.87,right,glove,contact,0.55,Medium,detector,mytronlabs-000003-002.mp4
-evt_131,90.57,90.87,left,marker pen,possible_release,0.88,High,detector,mytronlabs-000003-002.mp4
-evt_132,91.47,91.62,left,glove,possible_pickup,0.98,High,detector,mytronlabs-000003-002.mp4
-evt_133,91.62,91.78,left,glove,hold,0.98,High,detector,mytronlabs-000003-002.mp4
-evt_134,91.78,91.93,left,glove,possible_release,0.98,High,detector,mytronlabs-000003-002.mp4
-evt_135,92.2,92.5,right,marker pen,possible_pickup,0.95,High,detector,mytronlabs-000003-002.mp4
-evt_136,92.5,97.63,right,marker pen,hold,0.95,High,detector,mytronlabs-000003-002.mp4
-evt_137,93.6,94.2,left,table,contact,0.75,Medium,detector,mytronlabs-000003-002.mp4
-evt_138,94.73,96.2,left,orbital sander,approach,0.98,High,detector,mytronlabs-000003-002.mp4
-evt_139,96.2,96.49,left,orbital sander,possible_pickup,0.98,High,detector,mytronlabs-000003-002.mp4
-evt_140,96.49,96.78,left,orbital sander,hold,0.98,High,detector,mytronlabs-000003-002.mp4
-evt_141,96.78,97.07,left,orbital sander,possible_release,0.98,High,detector,mytronlabs-000003-002.mp4
-evt_142,97.13,97.4,left,glove,approach,0.92,High,detector,mytronlabs-000003-002.mp4
-evt_143,97.4,97.7,left,glove,possible_pickup,0.92,High,detector,mytronlabs-000003-002.mp4
-evt_144,97.63,97.93,right,marker pen,possible_release,0.95,High,detector,mytronlabs-000003-002.mp4
-evt_145,97.7,99.57,left,glove,hold,0.92,High,detector,mytronlabs-000003-002.mp4
-evt_146,98.6,98.8,right,marker pen,possible_pickup,0.98,High,detector,mytronlabs-000003-002.mp4
-evt_147,98.8,99.0,right,marker pen,hold,0.98,High,detector,mytronlabs-000003-002.mp4
-evt_148,99.0,99.2,right,marker pen,possible_release,0.98,High,detector,mytronlabs-000003-002.mp4
-evt_149,99.27,99.67,right,wooden plank,approach,0.89,High,detector,mytronlabs-000003-002.mp4
-evt_150,99.57,99.87,left,glove,possible_release,0.92,High,detector,mytronlabs-000003-002.mp4
-evt_151,99.67,99.97,right,wooden plank,possible_pickup,0.89,High,detector,mytronlabs-000003-002.mp4
-evt_152,99.97,100.5,right,wooden plank,hold,0.89,High,detector,mytronlabs-000003-002.mp4
-evt_153,100.33,100.63,left,timber,possible_pickup,0.88,High,detector,mytronlabs-000003-002.mp4
-evt_154,100.5,100.8,right,wooden plank,possible_release,0.89,High,detector,mytronlabs-000003-002.mp4
-evt_155,100.63,101.03,left,timber,hold,0.88,High,detector,mytronlabs-000003-002.mp4
-evt_156,101.03,101.33,left,timber,possible_release,0.88,High,detector,mytronlabs-000003-002.mp4
-evt_157,103.53,103.83,left,glue bottle,possible_pickup,0.51,Low,detector,mytronlabs-000003-002.mp4
-evt_158,103.83,106.03,left,glue bottle,hold,0.51,Low,detector,mytronlabs-000003-002.mp4
-evt_159,106.03,106.33,left,glue bottle,possible_release,0.51,Low,detector,mytronlabs-000003-002.mp4
-evt_160,107.33,107.63,left,wooden plank,possible_pickup,0.8,High,detector,mytronlabs-000003-002.mp4
-evt_161,107.63,108.97,left,wooden plank,hold,0.8,High,detector,mytronlabs-000003-002.mp4
-evt_162,108.67,108.97,right,orbital sander,possible_pickup,0.73,Medium,detector,mytronlabs-000003-002.mp4
-evt_163,108.97,109.27,left,wooden plank,possible_release,0.8,High,detector,mytronlabs-000003-002.mp4
-evt_164,108.97,109.77,right,orbital sander,hold,0.73,Medium,detector,mytronlabs-000003-002.mp4
-evt_165,109.33,109.6,left,marker pen,approach,0.88,High,detector,mytronlabs-000003-002.mp4
-evt_166,109.6,109.9,left,marker pen,possible_pickup,0.88,High,detector,mytronlabs-000003-002.mp4
-evt_167,109.77,110.07,right,orbital sander,possible_release,0.73,Medium,detector,mytronlabs-000003-002.mp4
-evt_168,109.9,111.5,left,marker pen,hold,0.88,High,detector,mytronlabs-000003-002.mp4
-evt_169,111.5,111.8,left,marker pen,possible_release,0.88,High,detector,mytronlabs-000003-002.mp4
-evt_170,111.87,112.17,right,wooden plank,possible_pickup,0.87,High,detector,mytronlabs-000003-002.mp4
-evt_171,112.17,113.57,right,wooden plank,hold,0.87,High,detector,mytronlabs-000003-002.mp4
-evt_172,113.57,113.87,right,wooden plank,possible_release,0.87,High,detector,mytronlabs-000003-002.mp4
-evt_173,115.47,115.77,left,marker pen,possible_pickup,0.92,High,detector,mytronlabs-000003-002.mp4
-evt_174,115.6,115.9,right,marker pen,possible_pickup,0.98,High,detector,mytronlabs-000003-002.mp4
-evt_175,115.77,118.3,left,marker pen,hold,0.92,High,detector,mytronlabs-000003-002.mp4
-evt_176,115.9,116.37,right,marker pen,hold,0.98,High,detector,mytronlabs-000003-002.mp4
-evt_177,116.37,116.67,right,marker pen,possible_release,0.98,High,detector,mytronlabs-000003-002.mp4
-evt_178,117.4,117.51,right,marker pen,possible_pickup,0.98,High,detector,mytronlabs-000003-002.mp4
-evt_179,117.51,117.62,right,marker pen,hold,0.98,High,detector,mytronlabs-000003-002.mp4
-evt_180,117.62,117.73,right,marker pen,possible_release,0.98,High,detector,mytronlabs-000003-002.mp4
-evt_181,118.3,118.6,left,marker pen,possible_release,0.92,High,detector,mytronlabs-000003-002.mp4
-evt_182,118.33,118.63,right,wooden plank,possible_pickup,0.77,Medium,detector,mytronlabs-000003-002.mp4
-evt_183,118.63,119.7,right,wooden plank,hold,0.77,Medium,detector,mytronlabs-000003-002.mp4
-evt_184,118.67,119.6,left,orbital sander,approach,0.82,High,detector,mytronlabs-000003-002.mp4
-evt_185,119.6,119.9,left,orbital sander,possible_pickup,0.82,High,detector,mytronlabs-000003-002.mp4
-evt_186,119.7,120.0,right,wooden plank,possible_release,0.77,Medium,detector,mytronlabs-000003-002.mp4
-evt_187,119.9,136.97,left,orbital sander,hold,0.82,High,detector,mytronlabs-000003-002.mp4
-evt_188,120.07,120.4,right,orbital sander,approach,0.83,High,detector,mytronlabs-000003-002.mp4
-evt_189,120.4,120.7,right,orbital sander,possible_pickup,0.83,High,detector,mytronlabs-000003-002.mp4
-evt_190,120.7,133.57,right,orbital sander,hold,0.83,High,detector,mytronlabs-000003-002.mp4
-evt_191,133.57,133.87,right,orbital sander,possible_release,0.83,High,detector,mytronlabs-000003-002.mp4
-evt_192,136.97,137.27,left,orbital sander,possible_release,0.82,High,detector,mytronlabs-000003-002.mp4
-evt_193,139.67,141.13,left,pliers,approach,0.5,Low,detector,mytronlabs-000003-002.mp4
-evt_194,140.13,140.43,right,marker pen,possible_pickup,0.79,Medium,detector,mytronlabs-000003-002.mp4
-evt_195,140.43,143.83,right,marker pen,hold,0.79,Medium,detector,mytronlabs-000003-002.mp4
-evt_196,141.13,141.29,left,pliers,possible_pickup,0.5,Low,detector,mytronlabs-000003-002.mp4
-evt_197,141.29,141.44,left,pliers,hold,0.5,Low,detector,mytronlabs-000003-002.mp4
-evt_198,141.44,141.6,left,pliers,possible_release,0.5,Low,detector,mytronlabs-000003-002.mp4
-evt_199,141.67,142.07,left,pliers,approach,0.69,Medium,detector,mytronlabs-000003-002.mp4
-evt_200,142.07,142.37,left,pliers,possible_pickup,0.69,Medium,detector,mytronlabs-000003-002.mp4
-evt_201,142.37,148.43,left,pliers,hold,0.69,Medium,detector,mytronlabs-000003-002.mp4
-evt_202,143.83,144.13,right,marker pen,possible_release,0.79,Medium,detector,mytronlabs-000003-002.mp4
-evt_203,145.13,145.4,right,marker pen,approach,0.85,High,detector,mytronlabs-000003-002.mp4
-evt_204,145.4,145.7,right,marker pen,possible_pickup,0.85,High,detector,mytronlabs-000003-002.mp4
-evt_205,145.7,150.3,right,marker pen,hold,0.85,High,detector,mytronlabs-000003-002.mp4
-evt_206,148.43,148.73,left,pliers,possible_release,0.69,Medium,detector,mytronlabs-000003-002.mp4
-evt_207,148.8,150.2,left,glue bottle,approach,0.97,High,detector,mytronlabs-000003-002.mp4
-evt_208,150.2,150.5,left,glue bottle,possible_pickup,0.97,High,detector,mytronlabs-000003-002.mp4
-evt_209,150.3,150.6,right,marker pen,possible_release,0.85,High,detector,mytronlabs-000003-002.mp4
-evt_210,150.5,151.77,left,glue bottle,hold,0.97,High,detector,mytronlabs-000003-002.mp4
-evt_211,151.27,151.57,right,marker pen,possible_pickup,0.84,High,detector,mytronlabs-000003-002.mp4
-evt_212,151.57,153.77,right,marker pen,hold,0.84,High,detector,mytronlabs-000003-002.mp4
-evt_213,151.77,152.07,left,glue bottle,possible_release,0.97,High,detector,mytronlabs-000003-002.mp4
-evt_214,153.6,154.0,left,orbital sander,approach,0.98,High,detector,mytronlabs-000003-002.mp4
-evt_215,153.77,154.07,right,marker pen,possible_release,0.84,High,detector,mytronlabs-000003-002.mp4
-evt_216,154.0,154.29,left,orbital sander,possible_pickup,0.98,High,detector,mytronlabs-000003-002.mp4
-evt_217,154.29,154.58,left,orbital sander,hold,0.98,High,detector,mytronlabs-000003-002.mp4
-evt_218,154.53,156.07,right,wooden plank,contact,0.71,Medium,detector,mytronlabs-000003-002.mp4
-evt_219,154.58,154.87,left,orbital sander,possible_release,0.98,High,detector,mytronlabs-000003-002.mp4
-evt_220,154.93,155.2,left,wooden piece,approach,0.69,Medium,detector,mytronlabs-000003-002.mp4
-evt_221,155.2,155.5,left,wooden piece,possible_pickup,0.69,Medium,detector,mytronlabs-000003-002.mp4
-evt_222,155.5,155.9,left,wooden piece,hold,0.69,Medium,detector,mytronlabs-000003-002.mp4
-evt_223,155.9,156.2,left,wooden piece,possible_release,0.69,Medium,detector,mytronlabs-000003-002.mp4
-evt_224,156.47,156.77,right,marker pen,possible_pickup,0.74,Medium,detector,mytronlabs-000003-002.mp4
-evt_225,156.77,157.9,right,marker pen,hold,0.74,Medium,detector,mytronlabs-000003-002.mp4
-evt_226,157.9,158.2,right,marker pen,possible_release,0.74,Medium,detector,mytronlabs-000003-002.mp4
-evt_227,158.13,158.43,left,glove,possible_pickup,0.76,Medium,detector,mytronlabs-000003-002.mp4
-evt_228,158.43,161.37,left,glove,hold,0.76,Medium,detector,mytronlabs-000003-002.mp4
-evt_229,159.2,159.5,right,marker pen,possible_pickup,0.9,High,detector,mytronlabs-000003-002.mp4
-evt_230,159.5,166.7,right,marker pen,hold,0.9,High,detector,mytronlabs-000003-002.mp4
-evt_231,161.37,161.67,left,glove,possible_release,0.76,Medium,detector,mytronlabs-000003-002.mp4
-evt_232,161.73,162.47,left,marker pen,approach,0.96,High,detector,mytronlabs-000003-002.mp4
-evt_233,162.47,162.77,left,marker pen,possible_pickup,0.96,High,detector,mytronlabs-000003-002.mp4
-evt_234,162.77,163.63,left,marker pen,hold,0.96,High,detector,mytronlabs-000003-002.mp4
-evt_235,163.63,163.93,left,marker pen,possible_release,0.96,High,detector,mytronlabs-000003-002.mp4
-evt_236,166.6,166.9,left,orbital sander,possible_pickup,0.67,Medium,detector,mytronlabs-000003-002.mp4
-evt_237,166.7,167.0,right,marker pen,possible_release,0.9,High,detector,mytronlabs-000003-002.mp4
-evt_238,166.9,167.83,left,orbital sander,hold,0.67,Medium,detector,mytronlabs-000003-002.mp4
-evt_239,167.83,168.13,left,orbital sander,possible_release,0.67,Medium,detector,mytronlabs-000003-002.mp4
-evt_240,168.0,168.3,right,marker pen,possible_pickup,0.88,High,detector,mytronlabs-000003-002.mp4
-evt_241,168.3,171.1,right,marker pen,hold,0.88,High,detector,mytronlabs-000003-002.mp4
-evt_242,169.47,169.77,left,wooden plank,possible_pickup,0.91,High,detector,mytronlabs-000003-002.mp4
-evt_243,169.77,172.1,left,wooden plank,hold,0.91,High,detector,mytronlabs-000003-002.mp4
-evt_244,171.1,171.4,right,marker pen,possible_release,0.88,High,detector,mytronlabs-000003-002.mp4
-evt_245,172.1,172.4,left,wooden plank,possible_release,0.91,High,detector,mytronlabs-000003-002.mp4
-evt_246,172.67,172.97,right,marker pen,possible_pickup,0.91,High,detector,mytronlabs-000003-002.mp4
-evt_247,172.97,174.63,right,marker pen,hold,0.91,High,detector,mytronlabs-000003-002.mp4
-evt_248,174.63,174.93,right,marker pen,possible_release,0.91,High,detector,mytronlabs-000003-002.mp4
-evt_249,174.8,175.1,left,marker pen,possible_pickup,0.81,High,detector,mytronlabs-000003-002.mp4
-evt_250,175.1,179.63,left,marker pen,hold,0.81,High,detector,mytronlabs-000003-002.mp4
-evt_251,176.47,176.77,right,marker pen,possible_pickup,0.77,Medium,detector,mytronlabs-000003-002.mp4
-evt_252,176.77,179.63,right,marker pen,hold,0.77,Medium,detector,mytronlabs-000003-002.mp4
-evt_253,179.63,179.93,left,marker pen,possible_release,0.81,High,detector,mytronlabs-000003-002.mp4
-evt_254,179.63,179.93,right,marker pen,possible_release,0.77,Medium,detector,mytronlabs-000003-002.mp4
+evt_045,20.17,20.47,right,marker pen,possible_release,0.9,High,detector,mytronlabs-000003-002.mp4
+evt_046,20.93,21.6,left,wooden frame,contact,0.75,Medium,detector,mytronlabs-000003-002.mp4
+evt_047,22.87,23.17,left,orbital sander,possible_pickup,0.84,High,detector,mytronlabs-000003-002.mp4
+evt_048,23.13,23.43,right,marker pen,possible_pickup,0.78,Medium,detector,mytronlabs-000003-002.mp4
+evt_049,23.17,28.3,left,orbital sander,hold,0.84,High,detector,mytronlabs-000003-002.mp4
+evt_050,23.43,33.17,right,marker pen,hold,0.78,Medium,detector,mytronlabs-000003-002.mp4
+evt_051,28.3,28.6,left,orbital sander,possible_release,0.84,High,detector,mytronlabs-000003-002.mp4
+evt_052,30.6,30.9,left,marker pen,possible_pickup,0.77,Medium,detector,mytronlabs-000003-002.mp4
+evt_053,30.9,45.23,left,marker pen,hold,0.77,Medium,detector,mytronlabs-000003-002.mp4
+evt_054,33.17,33.47,right,marker pen,possible_release,0.78,Medium,detector,mytronlabs-000003-002.mp4
+evt_055,36.67,36.82,right,orbital sander,possible_pickup,0.4,Low,detector,mytronlabs-000003-002.mp4
+evt_056,36.82,36.98,right,orbital sander,hold,0.4,Low,detector,mytronlabs-000003-002.mp4
+evt_057,36.98,37.13,right,orbital sander,possible_release,0.4,Low,detector,mytronlabs-000003-002.mp4
+evt_058,44.87,45.17,right,marker pen,possible_pickup,0.82,High,detector,mytronlabs-000003-002.mp4
+evt_059,45.17,45.63,right,marker pen,hold,0.82,High,detector,mytronlabs-000003-002.mp4
+evt_060,45.23,45.53,left,marker pen,possible_release,0.77,Medium,detector,mytronlabs-000003-002.mp4
+evt_061,45.63,45.93,right,marker pen,possible_release,0.82,High,detector,mytronlabs-000003-002.mp4
+evt_062,45.67,46.0,left,hand saw,approach,0.67,Medium,detector,mytronlabs-000003-002.mp4
+evt_063,46.0,46.3,left,hand saw,possible_pickup,0.67,Medium,detector,mytronlabs-000003-002.mp4
+evt_064,46.3,46.63,left,hand saw,hold,0.67,Medium,detector,mytronlabs-000003-002.mp4
+evt_065,46.63,46.93,left,hand saw,possible_release,0.67,Medium,detector,mytronlabs-000003-002.mp4
+evt_066,47.47,47.87,right,glove,approach,0.43,Low,detector,mytronlabs-000003-002.mp4
+evt_067,47.87,48.0,right,glove,possible_pickup,0.43,Low,detector,mytronlabs-000003-002.mp4
+evt_068,48.0,48.13,right,glove,hold,0.43,Low,detector,mytronlabs-000003-002.mp4
+evt_069,48.13,48.27,right,glove,possible_release,0.43,Low,detector,mytronlabs-000003-002.mp4
+evt_070,49.13,49.43,right,marker pen,possible_pickup,0.64,Medium,detector,mytronlabs-000003-002.mp4
+evt_071,49.27,49.57,left,marker pen,possible_pickup,0.49,Low,detector,mytronlabs-000003-002.mp4
+evt_072,49.43,57.97,right,marker pen,hold,0.64,Medium,detector,mytronlabs-000003-002.mp4
+evt_073,49.57,56.17,left,marker pen,hold,0.49,Low,detector,mytronlabs-000003-002.mp4
+evt_074,56.17,56.47,left,marker pen,possible_release,0.49,Low,detector,mytronlabs-000003-002.mp4
+evt_075,57.73,58.03,left,orbital sander,possible_pickup,0.42,Low,detector,mytronlabs-000003-002.mp4
+evt_076,57.97,58.27,right,marker pen,possible_release,0.64,Medium,detector,mytronlabs-000003-002.mp4
+evt_077,58.03,58.97,left,orbital sander,hold,0.42,Low,detector,mytronlabs-000003-002.mp4
+evt_078,58.97,59.27,left,orbital sander,possible_release,0.42,Low,detector,mytronlabs-000003-002.mp4
+evt_079,59.13,59.43,right,marker pen,possible_pickup,0.81,High,detector,mytronlabs-000003-002.mp4
+evt_080,59.43,62.63,right,marker pen,hold,0.81,High,detector,mytronlabs-000003-002.mp4
+evt_081,59.8,60.67,left,wooden plank,contact,0.98,High,detector,mytronlabs-000003-002.mp4
+evt_082,61.07,62.53,left,orbital sander,approach,0.42,Low,detector,mytronlabs-000003-002.mp4
+evt_083,62.53,62.83,left,orbital sander,possible_pickup,0.42,Low,detector,mytronlabs-000003-002.mp4
+evt_084,62.63,62.93,right,marker pen,possible_release,0.81,High,detector,mytronlabs-000003-002.mp4
+evt_085,62.83,63.43,left,orbital sander,hold,0.42,Low,detector,mytronlabs-000003-002.mp4
+evt_086,63.4,63.7,right,marker pen,possible_pickup,0.93,High,detector,mytronlabs-000003-002.mp4
+evt_087,63.43,63.73,left,orbital sander,possible_release,0.42,Low,detector,mytronlabs-000003-002.mp4
+evt_088,63.7,66.97,right,marker pen,hold,0.93,High,detector,mytronlabs-000003-002.mp4
+evt_089,65.33,66.8,left,marker pen,approach,0.4,Low,detector,mytronlabs-000003-002.mp4
+evt_090,66.8,67.1,left,marker pen,possible_pickup,0.4,Low,detector,mytronlabs-000003-002.mp4
+evt_091,66.97,67.27,right,marker pen,possible_release,0.93,High,detector,mytronlabs-000003-002.mp4
+evt_092,67.1,67.5,left,marker pen,hold,0.4,Low,detector,mytronlabs-000003-002.mp4
+evt_093,67.5,67.8,left,marker pen,possible_release,0.4,Low,detector,mytronlabs-000003-002.mp4
+evt_094,67.93,68.23,right,marker pen,possible_pickup,0.68,Medium,detector,mytronlabs-000003-002.mp4
+evt_095,68.23,72.97,right,marker pen,hold,0.68,Medium,detector,mytronlabs-000003-002.mp4
+evt_096,68.27,68.57,left,orbital sander,possible_pickup,0.78,Medium,detector,mytronlabs-000003-002.mp4
+evt_097,68.57,79.97,left,orbital sander,hold,0.78,Medium,detector,mytronlabs-000003-002.mp4
+evt_098,72.97,73.27,right,marker pen,possible_release,0.68,Medium,detector,mytronlabs-000003-002.mp4
+evt_099,75.27,76.73,right,glove,approach,0.77,Medium,detector,mytronlabs-000003-002.mp4
+evt_100,76.73,77.03,right,glove,possible_pickup,0.77,Medium,detector,mytronlabs-000003-002.mp4
+evt_101,77.03,78.43,right,glove,hold,0.77,Medium,detector,mytronlabs-000003-002.mp4
+evt_102,78.43,78.73,right,glove,possible_release,0.77,Medium,detector,mytronlabs-000003-002.mp4
+evt_103,79.93,80.07,right,orbital sander,possible_pickup,0.57,Medium,detector,mytronlabs-000003-002.mp4
+evt_104,79.97,80.27,left,orbital sander,possible_release,0.78,Medium,detector,mytronlabs-000003-002.mp4
+evt_105,80.07,80.2,right,orbital sander,hold,0.57,Medium,detector,mytronlabs-000003-002.mp4
+evt_106,80.2,80.33,right,orbital sander,possible_release,0.57,Medium,detector,mytronlabs-000003-002.mp4
+evt_107,80.4,80.67,left,marker pen,approach,0.55,Medium,detector,mytronlabs-000003-002.mp4
+evt_108,80.67,80.97,left,marker pen,possible_pickup,0.55,Medium,detector,mytronlabs-000003-002.mp4
+evt_109,80.97,81.77,left,marker pen,hold,0.55,Medium,detector,mytronlabs-000003-002.mp4
+evt_110,81.4,81.7,right,marker pen,possible_pickup,0.77,Medium,detector,mytronlabs-000003-002.mp4
+evt_111,81.7,88.57,right,marker pen,hold,0.77,Medium,detector,mytronlabs-000003-002.mp4
+evt_112,81.77,82.07,left,marker pen,possible_release,0.55,Medium,detector,mytronlabs-000003-002.mp4
+evt_113,84.13,84.43,left,marker pen,possible_pickup,0.53,Low,detector,mytronlabs-000003-002.mp4
+evt_114,84.43,84.9,left,marker pen,hold,0.53,Low,detector,mytronlabs-000003-002.mp4
+evt_115,84.9,85.2,left,marker pen,possible_release,0.53,Low,detector,mytronlabs-000003-002.mp4
+evt_116,86.4,87.0,left,wooden plank,contact,0.98,High,detector,mytronlabs-000003-002.mp4
+evt_117,87.07,88.13,left,marker pen,approach,0.76,Medium,detector,mytronlabs-000003-002.mp4
+evt_118,88.13,88.43,left,marker pen,possible_pickup,0.76,Medium,detector,mytronlabs-000003-002.mp4
+evt_119,88.43,90.57,left,marker pen,hold,0.76,Medium,detector,mytronlabs-000003-002.mp4
+evt_120,88.57,88.87,right,marker pen,possible_release,0.77,Medium,detector,mytronlabs-000003-002.mp4
+evt_121,90.47,90.77,right,marker pen,possible_pickup,0.41,Low,detector,mytronlabs-000003-002.mp4
+evt_122,90.57,90.87,left,marker pen,possible_release,0.76,Medium,detector,mytronlabs-000003-002.mp4
+evt_123,90.77,91.57,right,marker pen,hold,0.41,Low,detector,mytronlabs-000003-002.mp4
+evt_124,91.47,91.62,left,marker pen,possible_pickup,0.4,Low,detector,mytronlabs-000003-002.mp4
+evt_125,91.57,91.87,right,marker pen,possible_release,0.41,Low,detector,mytronlabs-000003-002.mp4
+evt_126,91.62,91.78,left,marker pen,hold,0.4,Low,detector,mytronlabs-000003-002.mp4
+evt_127,91.78,91.93,left,marker pen,possible_release,0.4,Low,detector,mytronlabs-000003-002.mp4
+evt_128,92.2,92.5,right,marker pen,possible_pickup,0.8,High,detector,mytronlabs-000003-002.mp4
+evt_129,92.5,97.63,right,marker pen,hold,0.8,High,detector,mytronlabs-000003-002.mp4
+evt_130,94.73,96.2,left,marker pen,approach,0.98,High,detector,mytronlabs-000003-002.mp4
+evt_131,96.2,96.49,left,marker pen,possible_pickup,0.98,High,detector,mytronlabs-000003-002.mp4
+evt_132,96.49,96.78,left,marker pen,hold,0.98,High,detector,mytronlabs-000003-002.mp4
+evt_133,96.78,97.07,left,marker pen,possible_release,0.98,High,detector,mytronlabs-000003-002.mp4
+evt_134,97.13,97.4,left,marker pen,approach,0.68,Medium,detector,mytronlabs-000003-002.mp4
+evt_135,97.4,97.7,left,marker pen,possible_pickup,0.68,Medium,detector,mytronlabs-000003-002.mp4
+evt_136,97.63,97.93,right,marker pen,possible_release,0.8,High,detector,mytronlabs-000003-002.mp4
+evt_137,97.7,99.57,left,marker pen,hold,0.68,Medium,detector,mytronlabs-000003-002.mp4
+evt_138,98.6,98.8,right,marker pen,possible_pickup,0.9,High,detector,mytronlabs-000003-002.mp4
+evt_139,98.8,99.0,right,marker pen,hold,0.9,High,detector,mytronlabs-000003-002.mp4
+evt_140,99.0,99.2,right,marker pen,possible_release,0.9,High,detector,mytronlabs-000003-002.mp4
+evt_141,99.27,99.67,right,orbital sander,approach,0.4,Low,detector,mytronlabs-000003-002.mp4
+evt_142,99.57,99.87,left,marker pen,possible_release,0.68,Medium,detector,mytronlabs-000003-002.mp4
+evt_143,99.67,99.97,right,orbital sander,possible_pickup,0.4,Low,detector,mytronlabs-000003-002.mp4
+evt_144,99.97,100.5,right,orbital sander,hold,0.4,Low,detector,mytronlabs-000003-002.mp4
+evt_145,100.33,100.63,left,wooden plank,possible_pickup,0.81,High,detector,mytronlabs-000003-002.mp4
+evt_146,100.5,100.8,right,orbital sander,possible_release,0.4,Low,detector,mytronlabs-000003-002.mp4
+evt_147,100.63,101.03,left,wooden plank,hold,0.81,High,detector,mytronlabs-000003-002.mp4
+evt_148,101.03,101.33,left,wooden plank,possible_release,0.81,High,detector,mytronlabs-000003-002.mp4
+evt_149,103.53,103.83,left,orbital sander,possible_pickup,0.74,Medium,detector,mytronlabs-000003-002.mp4
+evt_150,103.83,106.03,left,orbital sander,hold,0.74,Medium,detector,mytronlabs-000003-002.mp4
+evt_151,106.03,106.33,left,orbital sander,possible_release,0.74,Medium,detector,mytronlabs-000003-002.mp4
+evt_152,107.33,107.63,left,marker pen,possible_pickup,0.98,High,detector,mytronlabs-000003-002.mp4
+evt_153,107.63,108.97,left,marker pen,hold,0.98,High,detector,mytronlabs-000003-002.mp4
+evt_154,108.67,108.97,right,marker pen,possible_pickup,0.77,Medium,detector,mytronlabs-000003-002.mp4
+evt_155,108.97,109.27,left,marker pen,possible_release,0.98,High,detector,mytronlabs-000003-002.mp4
+evt_156,108.97,109.77,right,marker pen,hold,0.77,Medium,detector,mytronlabs-000003-002.mp4
+evt_157,109.33,109.6,left,marker pen,approach,0.56,Medium,detector,mytronlabs-000003-002.mp4
+evt_158,109.6,109.9,left,marker pen,possible_pickup,0.56,Medium,detector,mytronlabs-000003-002.mp4
+evt_159,109.77,110.07,right,marker pen,possible_release,0.77,Medium,detector,mytronlabs-000003-002.mp4
+evt_160,109.9,111.5,left,marker pen,hold,0.56,Medium,detector,mytronlabs-000003-002.mp4
+evt_161,111.5,111.8,left,marker pen,possible_release,0.56,Medium,detector,mytronlabs-000003-002.mp4
+evt_162,111.87,112.17,right,wooden plank,possible_pickup,0.68,Medium,detector,mytronlabs-000003-002.mp4
+evt_163,112.17,113.57,right,wooden plank,hold,0.68,Medium,detector,mytronlabs-000003-002.mp4
+evt_164,113.57,113.87,right,wooden plank,possible_release,0.68,Medium,detector,mytronlabs-000003-002.mp4
+evt_165,115.47,115.77,left,marker pen,possible_pickup,0.62,Medium,detector,mytronlabs-000003-002.mp4
+evt_166,115.6,115.9,right,marker pen,possible_pickup,0.59,Medium,detector,mytronlabs-000003-002.mp4
+evt_167,115.77,118.3,left,marker pen,hold,0.62,Medium,detector,mytronlabs-000003-002.mp4
+evt_168,115.9,116.37,right,marker pen,hold,0.59,Medium,detector,mytronlabs-000003-002.mp4
+evt_169,116.37,116.67,right,marker pen,possible_release,0.59,Medium,detector,mytronlabs-000003-002.mp4
+evt_170,117.4,117.51,right,marker pen,possible_pickup,0.67,Medium,detector,mytronlabs-000003-002.mp4
+evt_171,117.51,117.62,right,marker pen,hold,0.67,Medium,detector,mytronlabs-000003-002.mp4
+evt_172,117.62,117.73,right,marker pen,possible_release,0.67,Medium,detector,mytronlabs-000003-002.mp4
+evt_173,118.3,118.6,left,marker pen,possible_release,0.62,Medium,detector,mytronlabs-000003-002.mp4
+evt_174,118.33,118.63,right,wooden plank,possible_pickup,0.54,Low,detector,mytronlabs-000003-002.mp4
+evt_175,118.63,119.7,right,wooden plank,hold,0.54,Low,detector,mytronlabs-000003-002.mp4
+evt_176,118.67,119.6,left,marker pen,approach,0.65,Medium,detector,mytronlabs-000003-002.mp4
+evt_177,119.6,119.9,left,marker pen,possible_pickup,0.65,Medium,detector,mytronlabs-000003-002.mp4
+evt_178,119.7,120.0,right,wooden plank,possible_release,0.54,Low,detector,mytronlabs-000003-002.mp4
+evt_179,119.9,136.97,left,marker pen,hold,0.65,Medium,detector,mytronlabs-000003-002.mp4
+evt_180,120.4,120.7,right,marker pen,possible_pickup,0.81,High,detector,mytronlabs-000003-002.mp4
+evt_181,120.7,133.57,right,marker pen,hold,0.81,High,detector,mytronlabs-000003-002.mp4
+evt_182,133.57,133.87,right,marker pen,possible_release,0.81,High,detector,mytronlabs-000003-002.mp4
+evt_183,136.97,137.27,left,marker pen,possible_release,0.65,Medium,detector,mytronlabs-000003-002.mp4
+evt_184,139.67,141.13,left,marker pen,approach,0.4,Low,detector,mytronlabs-000003-002.mp4
+evt_185,140.13,140.43,right,marker pen,possible_pickup,0.56,Medium,detector,mytronlabs-000003-002.mp4
+evt_186,140.43,143.83,right,marker pen,hold,0.56,Medium,detector,mytronlabs-000003-002.mp4
+evt_187,141.13,141.29,left,marker pen,possible_pickup,0.4,Low,detector,mytronlabs-000003-002.mp4
+evt_188,141.29,141.44,left,marker pen,hold,0.4,Low,detector,mytronlabs-000003-002.mp4
+evt_189,141.44,141.6,left,marker pen,possible_release,0.4,Low,detector,mytronlabs-000003-002.mp4
+evt_190,141.67,142.07,left,marker pen,approach,0.43,Low,detector,mytronlabs-000003-002.mp4
+evt_191,142.07,142.37,left,marker pen,possible_pickup,0.43,Low,detector,mytronlabs-000003-002.mp4
+evt_192,142.37,148.43,left,marker pen,hold,0.43,Low,detector,mytronlabs-000003-002.mp4
+evt_193,143.83,144.13,right,marker pen,possible_release,0.56,Medium,detector,mytronlabs-000003-002.mp4
+evt_194,145.13,145.4,right,marker pen,approach,0.8,High,detector,mytronlabs-000003-002.mp4
+evt_195,145.4,145.7,right,marker pen,possible_pickup,0.8,High,detector,mytronlabs-000003-002.mp4
+evt_196,145.7,150.3,right,marker pen,hold,0.8,High,detector,mytronlabs-000003-002.mp4
+evt_197,148.43,148.73,left,marker pen,possible_release,0.43,Low,detector,mytronlabs-000003-002.mp4
+evt_198,149.07,150.2,left,marker pen,approach,0.48,Low,detector,mytronlabs-000003-002.mp4
+evt_199,150.2,150.5,left,marker pen,possible_pickup,0.48,Low,detector,mytronlabs-000003-002.mp4
+evt_200,150.3,150.6,right,marker pen,possible_release,0.8,High,detector,mytronlabs-000003-002.mp4
+evt_201,150.5,151.77,left,marker pen,hold,0.48,Low,detector,mytronlabs-000003-002.mp4
+evt_202,151.27,151.57,right,marker pen,possible_pickup,0.72,Medium,detector,mytronlabs-000003-002.mp4
+evt_203,151.57,153.77,right,marker pen,hold,0.72,Medium,detector,mytronlabs-000003-002.mp4
+evt_204,151.77,152.07,left,marker pen,possible_release,0.48,Low,detector,mytronlabs-000003-002.mp4
+evt_205,153.6,154.0,left,marker pen,approach,0.4,Low,detector,mytronlabs-000003-002.mp4
+evt_206,153.77,154.07,right,marker pen,possible_release,0.72,Medium,detector,mytronlabs-000003-002.mp4
+evt_207,154.0,154.29,left,marker pen,possible_pickup,0.4,Low,detector,mytronlabs-000003-002.mp4
+evt_208,154.29,154.58,left,marker pen,hold,0.4,Low,detector,mytronlabs-000003-002.mp4
+evt_209,154.53,154.83,right,wooden plank,possible_pickup,0.46,Low,detector,mytronlabs-000003-002.mp4
+evt_210,154.58,154.87,left,marker pen,possible_release,0.4,Low,detector,mytronlabs-000003-002.mp4
+evt_211,154.83,155.77,right,wooden plank,hold,0.46,Low,detector,mytronlabs-000003-002.mp4
+evt_212,154.93,155.2,left,wooden plank,approach,0.75,Medium,detector,mytronlabs-000003-002.mp4
+evt_213,155.2,155.5,left,wooden plank,possible_pickup,0.75,Medium,detector,mytronlabs-000003-002.mp4
+evt_214,155.5,155.9,left,wooden plank,hold,0.75,Medium,detector,mytronlabs-000003-002.mp4
+evt_215,155.77,156.07,right,wooden plank,possible_release,0.46,Low,detector,mytronlabs-000003-002.mp4
+evt_216,155.9,156.2,left,wooden plank,possible_release,0.75,Medium,detector,mytronlabs-000003-002.mp4
+evt_217,156.13,156.47,right,wooden plank,approach,0.89,High,detector,mytronlabs-000003-002.mp4
+evt_218,156.47,156.77,right,wooden plank,possible_pickup,0.89,High,detector,mytronlabs-000003-002.mp4
+evt_219,156.77,157.9,right,wooden plank,hold,0.89,High,detector,mytronlabs-000003-002.mp4
+evt_220,157.8,158.13,left,marker pen,approach,0.44,Low,detector,mytronlabs-000003-002.mp4
+evt_221,157.9,158.2,right,wooden plank,possible_release,0.89,High,detector,mytronlabs-000003-002.mp4
+evt_222,158.13,158.43,left,marker pen,possible_pickup,0.44,Low,detector,mytronlabs-000003-002.mp4
+evt_223,158.43,161.37,left,marker pen,hold,0.44,Low,detector,mytronlabs-000003-002.mp4
+evt_224,159.2,159.5,right,marker pen,possible_pickup,0.81,High,detector,mytronlabs-000003-002.mp4
+evt_225,159.5,166.7,right,marker pen,hold,0.81,High,detector,mytronlabs-000003-002.mp4
+evt_226,161.37,161.67,left,marker pen,possible_release,0.44,Low,detector,mytronlabs-000003-002.mp4
+evt_227,161.73,162.47,left,marker pen,approach,0.65,Medium,detector,mytronlabs-000003-002.mp4
+evt_228,162.47,162.77,left,marker pen,possible_pickup,0.65,Medium,detector,mytronlabs-000003-002.mp4
+evt_229,162.77,163.63,left,marker pen,hold,0.65,Medium,detector,mytronlabs-000003-002.mp4
+evt_230,163.63,163.93,left,marker pen,possible_release,0.65,Medium,detector,mytronlabs-000003-002.mp4
+evt_231,166.6,166.9,left,marker pen,possible_pickup,0.4,Low,detector,mytronlabs-000003-002.mp4
+evt_232,166.7,167.0,right,marker pen,possible_release,0.81,High,detector,mytronlabs-000003-002.mp4
+evt_233,166.9,167.83,left,marker pen,hold,0.4,Low,detector,mytronlabs-000003-002.mp4
+evt_234,167.83,168.13,left,marker pen,possible_release,0.4,Low,detector,mytronlabs-000003-002.mp4
+evt_235,168.0,168.3,right,marker pen,possible_pickup,0.63,Medium,detector,mytronlabs-000003-002.mp4
+evt_236,168.3,171.1,right,marker pen,hold,0.63,Medium,detector,mytronlabs-000003-002.mp4
+evt_237,169.47,169.77,left,marker pen,possible_pickup,0.8,High,detector,mytronlabs-000003-002.mp4
+evt_238,169.77,172.1,left,marker pen,hold,0.8,High,detector,mytronlabs-000003-002.mp4
+evt_239,171.1,171.4,right,marker pen,possible_release,0.63,Medium,detector,mytronlabs-000003-002.mp4
+evt_240,172.1,172.4,left,marker pen,possible_release,0.8,High,detector,mytronlabs-000003-002.mp4
+evt_241,172.67,172.97,right,marker pen,possible_pickup,0.63,Medium,detector,mytronlabs-000003-002.mp4
+evt_242,172.97,174.63,right,marker pen,hold,0.63,Medium,detector,mytronlabs-000003-002.mp4
+evt_243,174.63,174.93,right,marker pen,possible_release,0.63,Medium,detector,mytronlabs-000003-002.mp4
+evt_244,174.8,175.1,left,marker pen,possible_pickup,0.47,Low,detector,mytronlabs-000003-002.mp4
+evt_245,175.1,179.63,left,marker pen,hold,0.47,Low,detector,mytronlabs-000003-002.mp4
+evt_246,176.47,176.77,right,marker pen,possible_pickup,0.66,Medium,detector,mytronlabs-000003-002.mp4
+evt_247,176.77,179.63,right,marker pen,hold,0.66,Medium,detector,mytronlabs-000003-002.mp4
+evt_248,179.63,179.93,left,marker pen,possible_release,0.47,Low,detector,mytronlabs-000003-002.mp4
+evt_249,179.63,179.93,right,marker pen,possible_release,0.66,Medium,detector,mytronlabs-000003-002.mp4
